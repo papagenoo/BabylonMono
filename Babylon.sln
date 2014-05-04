@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Babylon.Test", "Babylon.Test\Babylon.Test.csproj", "{31CF3D79-9B9A-4CC3-826C-EEDBD566CEB7}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Babylon.Android", "Babylon.Android\Babylon.Android.csproj", "{C3445CA7-9E3F-48D7-8C4F-97C403549162}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Babylon.Android", "Babylon.Android\Babylon.Android.csproj", "{C3445CA7-9E3F-48D7-8C4F-97C403549162}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Babylon.iOS", "Babylon.iOS\Babylon.iOS.csproj", "{8B45713A-E279-4445-86F3-83E9140D9867}"
 EndProject

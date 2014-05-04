@@ -1,5 +1,18 @@
 ﻿<Properties>
-  <DisabledProjects>
-    <String>Babylon.Android/Babylon.Android.csproj</String>
-  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.iOS/Main.cs">
+    <Files>
+      <File FileName="Babylon.Test/Test.cs" Line="1" Column="1" />
+      <File FileName="Babylon/MyClass.cs" Line="1" Column="1" />
+      <File FileName="Babylon/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
+      <File FileName="Babylon/Translations.cs" Line="1" Column="1" />
+      <File FileName="Babylon/Lang.cs" Line="1" Column="1" />
+      <File FileName="Babylon.iOS/Main.cs" Line="18" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
