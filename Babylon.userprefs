@@ -1,0 +1,5 @@
+﻿<Properties>
+  <DisabledProjects>
+    <String>Babylon.Android/Babylon.Android.csproj</String>
+  </DisabledProjects>
+</Properties>

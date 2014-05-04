@@ -1,0 +1,9 @@
+/Users/max/Projects/Babylon/Babylon.Test/obj/Release/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.Test.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.Test.dll
+/Users/max/Projects/Babylon/Babylon.Test/obj/Release/Babylon.Test.dll
+/Users/max/Projects/Babylon/Babylon.Test/obj/Release/Babylon.Test.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.dll
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.UI.dll
+/Users/max/Projects/Babylon/Babylon.Test/bin/Release/Babylon.UI.dll.mdb
