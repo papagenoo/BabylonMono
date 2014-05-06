@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Babylon", "Babylon\Babylon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Babylon.UI", "Babylon.UI\Babylon.UI.csproj", "{45EA473D-A397-494C-82B2-CFC6DF6F616C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_HelloWorld_iPhone", "Example_HelloWorld_iPhone\Example_HelloWorld_iPhone.csproj", "{50509928-9B3D-446F-AACC-C7B983232087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -71,6 +73,22 @@ Global
 		{45EA473D-A397-494C-82B2-CFC6DF6F616C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{45EA473D-A397-494C-82B2-CFC6DF6F616C}.Release|x86.ActiveCfg = Release|Any CPU
 		{45EA473D-A397-494C-82B2-CFC6DF6F616C}.Release|x86.Build.0 = Release|Any CPU
+		{50509928-9B3D-446F-AACC-C7B983232087}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|iPhone.Build.0 = Debug|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|x86.ActiveCfg = Debug|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Debug|x86.Build.0 = Debug|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|iPhone.ActiveCfg = Release|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|iPhone.Build.0 = Release|iPhone
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|x86.ActiveCfg = Release|iPhoneSimulator
+		{50509928-9B3D-446F-AACC-C7B983232087}.Release|x86.Build.0 = Release|iPhoneSimulator
 		{8B45713A-E279-4445-86F3-83E9140D9867}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{8B45713A-E279-4445-86F3-83E9140D9867}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{8B45713A-E279-4445-86F3-83E9140D9867}.AppStore|iPhone.ActiveCfg = AppStore|iPhone

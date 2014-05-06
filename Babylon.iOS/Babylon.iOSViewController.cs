@@ -28,6 +28,8 @@ namespace Babylon.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+			System.Console.WriteLine ("!!!");
+
 			
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

@@ -17,6 +17,8 @@ namespace Babylon.iOS
 			Dictionary<string, string> d = new Dictionary<string, string>();
 			d.Add ("k", "v");
 			System.Console.WriteLine ("!!!");
+			System.Diagnostics.Debug.WriteLine("!!");
+
 		}
 	}
 }

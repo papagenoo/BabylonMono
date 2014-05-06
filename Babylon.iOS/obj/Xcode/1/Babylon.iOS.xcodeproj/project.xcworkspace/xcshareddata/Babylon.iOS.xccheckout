@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B10FB821-7B6D-4C87-9271-A93003DDB1A1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Babylon.iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B1D4247-46D2-424E-99E8-067ED4E94BA3</key>
+		<string>https://github.com/papagenoo/BabylonMono.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Babylon.iOS/obj/Xcode/1/Babylon.iOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B1D4247-46D2-424E-99E8-067ED4E94BA3</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/papagenoo/BabylonMono.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B1D4247-46D2-424E-99E8-067ED4E94BA3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B1D4247-46D2-424E-99E8-067ED4E94BA3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Babylon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

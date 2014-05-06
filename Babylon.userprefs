@@ -8,7 +8,7 @@
       <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
       <File FileName="Babylon/Translations.cs" Line="1" Column="1" />
       <File FileName="Babylon/Lang.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/Main.cs" Line="18" Column="4" />
+      <File FileName="Babylon.iOS/Main.cs" Line="19" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

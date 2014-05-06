@@ -1,0 +1,210 @@
+TBabylon.iOS
+v6
+r1
+cCheck dependencies
+cCompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS normal i386
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000525642F10000000000000176
+t1381384945
+s374
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c00000000527843C500000000000003B5
+t1383613381
+s949
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000527843D100000000000001A0
+t1383613393
+s416
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000527843D50000000000445870
+t1383613397
+s4479088
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000527843D8000000000088C680
+t1383613400
+s8963712
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c00000000527843D900000000002C78D0
+t1383613401
+s2914512
+
+N/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000527843DD0000000001DB9910
+t1383613405
+s31168784
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m
+c00000000536610920000000000000144
+t1399197842
+s324
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m
+c00000000536610920000000000000160
+t1399197842
+s352
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o
+t1399326140
+s3196
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon.iOS.LinkFileList
+c00000000536805BB00000000000001B0
+t1399326139
+s432
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o
+t1399326140
+s38936
+
+N/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS
+t2
+s0
+
+CBuild AST from /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m
+r0
+
+CBuild AST from /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies6b44903b3d18b941^077e9c3b3d18b941^-306"warning: no rule to process file '/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.h' of type sourcecode.c.h for architecture i386warning: no rule to process file '/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.h' of type sourcecode.c.h for architecture i3862(21%IDEActivityLogMessage2@145"Warning: no rule to process file '/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.h' of type sourcecode.c.h for architecture i386-421018939#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@159"Warning: no rule to process file '/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.h' of type sourcecode.c.h for architecture i386-421018939#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"77801BE6-DF7A-4EA6-9992-E0FFFF2DF5E4-
+
+CCompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421018939.617189
+e421018940.290026
+r1
+xCompileC
+xDerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o
+x/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m247"CompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercf499f3b3d18b941^4b3e4a3c3d18b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m0000000000000000^3983"CompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-generated-files.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-own-target-headers.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-all-target-headers.hmap -iquote /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-project-headers.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/include -I/Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/DerivedSources/i386 -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/DerivedSources -F/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.d --serialize-diagnostics /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.dia -c /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/AppDelegate.m -o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o36"2086EEB6-997D-4673-852F-DC5A5D2DA8BE-
+b1611CB02-5146-4430-AAB4-1660F411165C
+
+CCompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s421018939.617587
+e421018940.290945
+r1
+xCompileC
+xDerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o
+x/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m275"CompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o Babylon_iOSViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6c419f3b3d18b941^2d7b4a3c3d18b941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m0000000000000000^4067"CompileC DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o Babylon_iOSViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-generated-files.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-own-target-headers.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-all-target-headers.hmap -iquote /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Babylon.iOS-project-headers.hmap -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/include -I/Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/DerivedSources/i386 -I/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/DerivedSources -F/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator -MMD -MT dependencies -MF /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.d --serialize-diagnostics /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.dia -c /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/Babylon_iOSViewController.m -o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o36"721E4477-A9B7-40EB-8EC1-46F7CECEC290-
+b1611CB02-5146-4430-AAB4-1660F411165C
+
+CCompileStoryboard /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/MainStoryboard_iPad.storyboard
+r0
+
+CCompileStoryboard /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/MainStoryboard_iPhone.storyboard
+r0
+
+CCopyPlistFile /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Entitlements.plist Entitlements.plist
+r0
+
+CCopyPlistFile /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Info.plist Info.plist
+r0
+
+CCpResource Default-568h@2x.png DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Default-568h@2x.png
+r0
+
+CGenerateDSYMFile /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app.dSYM /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS
+r0
+
+CLd /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS normal i386
+s421018940.291671
+e421018941.058024
+r0
+xLd
+x/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS
+xnormal
+xi386
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon.iOS.LinkFileList
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/AppDelegate-65B7BAAEFC29CCF4.o
+d/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon_iOSViewController-9CD24907D7B082E5.o
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libdyld.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+d/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+oUndefined symbols for architecture i386:
+o  "_main", referenced from:
+o      start in crt1.o
+old: symbol(s) not found for architecture i386
+oclang: error: linker command failed with exit code 1 (use -v to see invocation)
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Link /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS107"Ld DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS normal i386d3bd4a3c3d18b941^d3d80e3d3d18b941^-217"Undefined symbols for architecture i386:  "_main", referenced from:      start in crt1.old: symbol(s) not found for architecture i386clang: error: linker command failed with exit code 1 (use -v to see invocation)4(21%IDEActivityLogMessage2@25""_main", referenced from:-421018941#41#28#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--2@15"Start in crt1.o-421018941#69#22#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@41"Symbol(s) not found for architecture i386-421018941#91#46#-0#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-421018941#137#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1718"Ld DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS normal i386    cd /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode.app/Contents/Developer/usr/bin:/Applications/Xamarin Studio.app/Contents/MacOS:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Developer/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator -F/Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator -filelist /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon.iOS.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework UIKit -framework MapKit -framework Foundation -framework CoreGraphics -Xlinker -dependency_info -Xlinker /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Intermediates/Babylon.iOS.build/MonoTouch-iphonesimulator/Babylon.iOS.build/Objects-normal/i386/Babylon.iOS_dependency_info.dat -o /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app/Babylon.iOS36"6126C90A-3600-4174-8AB9-C33E3BC38CC9-
+b1611CB02-5146-4430-AAB4-1660F411165C
+
+CTouch /Users/max/Projects/Babylon/Babylon.iOS/obj/Xcode/1/DerivedData/Babylon.iOS/Build/Products/MonoTouch-iphonesimulator/Babylon.iOS.app
+r0
+
