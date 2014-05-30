@@ -1,0 +1,15 @@
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.Android.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.Android.dll
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.Android.apk
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/android/bin/Babylon.Android.apk
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/res/layout/main.xml
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/res/values/strings.xml
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/res/drawable/icon.png
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/R.cs.flag
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.Android-Signed.apk
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/uploadflags.txt
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/Babylon.Android.dll
+/Users/max/Projects/Babylon/Babylon.Android/obj/Debug/Babylon.Android.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.dll
+/Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.dll.mdb

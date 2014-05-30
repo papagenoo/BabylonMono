@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D649E80000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186756860000000000000000 /* UIKit.framework */; };
+		366BED1B0000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FCF9B90000000000000000 /* MapKit.framework */; };
+		B9F55B300000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30625100000000000000000 /* Foundation.framework */; };
+		3F0A37FC0000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B449A00000000000000000 /* CoreGraphics.framework */; };
+		72DE61900000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABEF2B700000000000000000 /* Default-568h@2x.png */; };
+		1C614EB10000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FF25B4F0000000000000000 /* Info.plist */; };
+		A8C0F9B00000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1D1C3900000000000000000 /* Entitlements.plist */; };
+		38B6D0850000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C47DD230000000000000000 /* MainStoryboard_iPhone.storyboard */; };
+		150C52590000000000000000 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D5EF70000000000000000 /* MainStoryboard_iPad.storyboard */; };
+		1BFB88790000000000000000 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C95170000000000000000 /* Main.xib */; };
+		A26496300000000000000000 /* SomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB7560100000000000000000 /* SomeView.xib */; };
+		282ADFF80000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2BBBEC960000000000000000 /* AppDelegate.h */; };
+		B6F97EC00000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F00A48A00000000000000000 /* AppDelegate.m */; };
+		1D11F3E60000000000000000 /* Example_HelloWorld_iPhoneViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 20A300840000000000000000 /* Example_HelloWorld_iPhoneViewController.h */; };
+		2B2343420000000000000000 /* Example_HelloWorld_iPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB44FE00000000000000000 /* Example_HelloWorld_iPhoneViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C0691980000000000000000 /* Example_HelloWorld_iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Example_HelloWorld_iPhone.app"; path = "Example_HelloWorld_iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		186756860000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		39FCF9B90000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		F30625100000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		29B449A00000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		ABEF2B700000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1FF25B4F0000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		E1D1C3900000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		3C47DD230000000000000000 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPhone.storyboard"; path = "MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
+		189D5EF70000000000000000 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPad.storyboard"; path = "MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
+		1F8C95170000000000000000 /* Main.xib */ = {isa = PBXFileReference; name = "Main.xib"; path = "Main.xib"; sourceTree = "<group>"; };
+		DB7560100000000000000000 /* SomeView.xib */ = {isa = PBXFileReference; name = "SomeView.xib"; path = "SomeView.xib"; sourceTree = "<group>"; };
+		2BBBEC960000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		F00A48A00000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		20A300840000000000000000 /* Example_HelloWorld_iPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Example_HelloWorld_iPhoneViewController.h"; path = "Example_HelloWorld_iPhoneViewController.h"; sourceTree = "<group>"; };
+		2EB44FE00000000000000000 /* Example_HelloWorld_iPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Example_HelloWorld_iPhoneViewController.m"; path = "Example_HelloWorld_iPhoneViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C52E64200000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D649E80000000000000000 /* UIKit.framework in Frameworks */,
+				366BED1B0000000000000000 /* MapKit.framework in Frameworks */,
+				B9F55B300000000000000000 /* Foundation.framework in Frameworks */,
+				3F0A37FC0000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C5EABD0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				17060C1C0000000000000000 /* Example_HelloWorld_iPhone */,
+				200A1D350000000000000000 /* Frameworks */,
+				712C4E300000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		712C4E300000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C0691980000000000000000 /* Example_HelloWorld_iPhone.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		200A1D350000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				186756860000000000000000 /* UIKit.framework */,
+				39FCF9B90000000000000000 /* MapKit.framework */,
+				F30625100000000000000000 /* Foundation.framework */,
+				29B449A00000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		17060C1C0000000000000000 /* Example_HelloWorld_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				2BBBEC960000000000000000 /* AppDelegate.h */,
+				ABEF2B700000000000000000 /* Default-568h@2x.png */,
+				E1D1C3900000000000000000 /* Entitlements.plist */,
+				20A300840000000000000000 /* Example_HelloWorld_iPhoneViewController.h */,
+				1FF25B4F0000000000000000 /* Info.plist */,
+				1F8C95170000000000000000 /* Main.xib */,
+				189D5EF70000000000000000 /* MainStoryboard_iPad.storyboard */,
+				3C47DD230000000000000000 /* MainStoryboard_iPhone.storyboard */,
+				DB7560100000000000000000 /* SomeView.xib */,
+				1F26CEDF0000000000000000 /* Supporting Files */,
+			);
+			name = "Example_HelloWorld_iPhone";
+			sourceTree = "<group>";
+		};
+		1F26CEDF0000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F00A48A00000000000000000 /* AppDelegate.m */,
+				2EB44FE00000000000000000 /* Example_HelloWorld_iPhoneViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20BAC26A0000000000000000 /* Example_HelloWorld_iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21536BBE0000000000000000 /* Build configuration list for PBXNativeTarget "Example_HelloWorld_iPhone" */;
+			buildPhases = (
+				36EC9A8E0000000000000000 /* Sources */,
+				C52E64200000000000000000 /* Frameworks */,
+				1FD73A190000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example_HelloWorld_iPhone";
+			productName = "Example_HelloWorld_iPhone";
+			productReference = 2C0691980000000000000000 /* Example_HelloWorld_iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16079C900000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 130F39460000000000000000 /* Build configuration list for PBXProject "Example_HelloWorld_iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 11C5EABD0000000000000000;
+			productRefGroup = 712C4E300000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20BAC26A0000000000000000 /* Example_HelloWorld_iPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FD73A190000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DE61900000000000000000 /* Default-568h@2x.png in Resources */,
+				1C614EB10000000000000000 /* Info.plist in Resources */,
+				A8C0F9B00000000000000000 /* Entitlements.plist in Resources */,
+				38B6D0850000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */,
+				150C52590000000000000000 /* MainStoryboard_iPad.storyboard in Resources */,
+				1BFB88790000000000000000 /* Main.xib in Resources */,
+				A26496300000000000000000 /* SomeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36EC9A8E0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282ADFF80000000000000000 /* AppDelegate.h in Sources */,
+				B6F97EC00000000000000000 /* AppDelegate.m in Sources */,
+				1D11F3E60000000000000000 /* Example_HelloWorld_iPhoneViewController.h in Sources */,
+				2B2343420000000000000000 /* Example_HelloWorld_iPhoneViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		148B6AEB0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		85C136C00000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "Example_HelloWorld_iPhone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		130F39460000000000000000 /* Build configuration list for PBXProject "Example_HelloWorld_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				148B6AEB0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		21536BBE0000000000000000 /* Build configuration list for PBXNativeTarget "Example_HelloWorld_iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C136C00000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16079C900000000000000000 /* Project object */;
+}

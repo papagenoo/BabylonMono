@@ -1,25 +1,32 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Example_HelloWorld_iPhone/Example_HelloWorld_iPhoneViewController.designer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.Android/MainActivity.cs">
     <Files>
-      <File FileName="Babylon.Test/Test.cs" Line="1" Column="1" />
-      <File FileName="Babylon/MyClass.cs" Line="1" Column="1" />
-      <File FileName="Babylon/Properties/AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
-      <File FileName="Babylon/Translations.cs" Line="1" Column="1" />
-      <File FileName="Babylon/Lang.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/Main.cs" Line="19" Column="28" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="32" Column="4" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Example_HelloWorld_iPhone/Main.cs" Line="1" Column="1" />
-      <File FileName="Example_HelloWorld_iPhone/AppDelegate.cs" Line="26" Column="101" />
-      <File FileName="Example_HelloWorld_iPhone/Example_HelloWorld_iPhoneViewController.cs" Line="8" Column="62" />
-      <File FileName="Example_HelloWorld_iPhone/Example_HelloWorld_iPhoneViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Babylon.Android/MainActivity.cs" Line="113" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="Babylon.Android" expanded="True">
+            <Node name="Properties" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="layout" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Babylon.Test" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Babylon.Android MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Debug="7C098DC5694B3DB6B021E230CA5D8A6" />
 </Properties>
