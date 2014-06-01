@@ -94,6 +94,7 @@ namespace Babylon.Android
 
 		PhrasesCollection phrases = new PhrasesCollection();
 		TextView phraseTextView;
+		SoundPlayer soundPlayer;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -106,6 +107,8 @@ namespace Babylon.Android
 			Button listenButton = FindViewById<Button> (Resource.Id.listenButton);
 			phraseTextView = FindViewById<TextView> (Resource.Id.phraseTextView);
 			phrase = phrases.Next;
+
+			soundPlayer = new SoundPlayerIml (Assets);
 
 			prevButton.Click += delegate {
 				phrase = phrases.Prev;
@@ -134,13 +137,7 @@ namespace Babylon.Android
 
 		void PlayAudio()
 		{
-			AssetFileDescriptor afd = Assets.OpenFd(phrase.AudioFileName);
-			_player = new MediaPlayer();
-			_player.SetDataSource(afd.FileDescriptor, afd.StartOffset, afd.Length);
-			_player.Prepare();
-			_player.Start();
+			soundPlayer.Play (phrase.AudioFileName);
 		}
 	}
 }
-
-

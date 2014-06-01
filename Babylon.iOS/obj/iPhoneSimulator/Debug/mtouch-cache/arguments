@@ -1,1 +1,29 @@
-/Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/mtouch.exe|-sdkroot|/Developer/Xcode.app/Contents/Developer|--cache|/Users/max/Projects/Babylon/Babylon.iOS/obj/iPhoneSimulator/Debug/mtouch-cache|--nomanifest|--nosign|-sim|/Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/BabyloniOS.app|-r|/Users/max/Projects/Babylon/Babylon/bin/Debug/Babylon.dll|-r|/Developer/MonoTouch/usr/lib/mono/2.1/System.dll|-r|/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll|-r|/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll|-r|/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll|-debug|-nolink|-sdk|7.0|-targetver|7.0|--abi=i386|/Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/BabyloniOS.exe
+# Version: 7.2.1.42 (773c77c)
+# [first argument, ignore] # /Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/max/Projects/Babylon/Babylon.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/BabyloniOS.app \
+	-r \
+	/Users/max/Projects/Babylon/Babylon/bin/Debug/Babylon.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/max/Projects/Babylon/Babylon.iOS/bin/iPhoneSimulator/Debug/BabyloniOS.exe \

@@ -1,12 +1,26 @@
 ﻿using System;
+using Android.Media;
+using Android.Content.Res;
 
 namespace Babylon.Android
 {
-	public class SoundPlayerIml
+	public class SoundPlayerIml : SoundPlayer
 	{
-		public SoundPlayerIml ()
+		MediaPlayer player;
+		AssetManager Assets;
+
+		public SoundPlayerIml (AssetManager assets)
 		{
+			Assets = assets;
+		}
+
+		public void Play (string filename)
+		{
+			AssetFileDescriptor afd = Assets.OpenFd(filename);
+			player = new MediaPlayer();
+			player.SetDataSource(afd.FileDescriptor, afd.StartOffset, afd.Length);
+			player.Prepare();
+			player.Start();		
 		}
 	}
 }
-

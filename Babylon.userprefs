@@ -1,19 +1,35 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.Android/MainActivity.cs">
     <Files>
-      <File FileName="Babylon.Android/MainActivity.cs" Line="113" Column="10" />
+      <File FileName="Babylon.Android/MainActivity.cs" Line="89" Column="1" />
+      <File FileName="Babylon.Test/Test.cs" Line="1" Column="1" />
+      <File FileName="Babylon.Test/Test2.cs" Line="1" Column="1" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="64" Column="50" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Babylon/SoundPlayer.cs" Line="7" Column="29" />
+      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="16" Column="1" />
+      <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
+      <File FileName="Babylon.Android/SoundPlayerIml.cs" Line="26" Column="2" />
+      <File FileName="Babylon/PhrasesCollection.cs" Line="8" Column="3" />
+      <File FileName="Babylon/Phrase.cs" Line="3" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True" selected="True">
+          <Node name="Babylon" expanded="True" />
           <Node name="Babylon.Android" expanded="True">
             <Node name="Properties" expanded="True" />
             <Node name="Resources" expanded="True">
               <Node name="layout" expanded="True" />
             </Node>
           </Node>
+          <Node name="Babylon.iOS" expanded="True">
+            <Node name="Audio" expanded="True" />
+            <Node name="Babylon.iOSViewController.cs" expanded="True" />
+          </Node>
           <Node name="Babylon.Test" expanded="True" />
+          <Node name="Babylon.UI" expanded="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">

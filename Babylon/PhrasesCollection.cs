@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections;
 
-namespace Babylon.Test
+namespace Babylon
 {
 	public class PhrasesCollection
 	{

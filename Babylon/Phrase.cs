@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Babylon.Test
+namespace Babylon
 {
 	public class Phrase
 	{

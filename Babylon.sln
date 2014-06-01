@@ -123,6 +123,6 @@ Global
 		{C3445CA7-9E3F-48D7-8C4F-97C403549162}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Babylon.Android\Babylon.Android.csproj
+		StartupItem = Babylon.iOS\Babylon.iOS.csproj
 	EndGlobalSection
 EndGlobal

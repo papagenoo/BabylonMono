@@ -4,6 +4,6 @@ namespace Babylon
 {
 	public interface SoundPlayer
 	{
+		void Play (string filename);
 	}
 }
-

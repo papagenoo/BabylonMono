@@ -49,6 +49,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundPlayerIml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -68,10 +69,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\raw\" />
-    <Folder Include="Resources\raw\audio\lesson1\" />
     <Folder Include="Assets\audio\" />
-    <Folder Include="Resources\raw\audio\" />
     <Folder Include="Assets\audio\lesson1\" />
   </ItemGroup>
   <ItemGroup>

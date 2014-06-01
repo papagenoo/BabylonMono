@@ -5,11 +5,21 @@ using Babylon.UI;
 namespace Babylon.Test
 {
 	[TestFixture ()]
-	public class TranslationsTest
+	public class TranslationsTest2
 	{
 		[Test ()]
 		public void TestCase ()
 		{
+			Phrase phrase;
+			PhrasesCollection phrases = new PhrasesCollection();
+			phrase = phrases.Next;
+			phrase = phrases.Prev;
+
+
+
+
+
+
 			String[] o = { "Я из Москвы", "Он прилетел в Берлин", "Я приехал из Москвы" };
 			String[] t = { "Ich bin aus Moskau", "Er ist nach Berlinn gefrogen", "Ich bin aus Moskau gefarhen" };
 			Translations translations = new Translations(Lang.RU, Lang.DE);

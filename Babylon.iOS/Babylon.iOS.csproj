@@ -103,6 +103,7 @@
     <Compile Include="Babylon.iOSViewController.designer.cs">
       <DependentUpon>Babylon.iOSViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="SoundPlayerIml.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
@@ -114,5 +115,11 @@
       <Project>{2BDCE807-7914-417A-BE92-42AB253FA728}</Project>
       <Name>Babylon</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Audio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Audio\2.mp3" />
   </ItemGroup>
 </Project>
