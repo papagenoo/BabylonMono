@@ -10,6 +10,8 @@
     <AssemblyName>Babylon</AssemblyName>
     <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +39,9 @@
     <Compile Include="SoundPlayer.cs" />
     <Compile Include="Phrase.cs" />
     <Compile Include="PhrasesCollection.cs" />
+    <Compile Include="TwoWayEnumerator.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="LoopedTwoWayEnumerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

@@ -7,7 +7,7 @@ namespace Babylon.Test
 	[TestFixture ()]
 	public class TranslationsTest
 	{
-		[Test ()]
+		/*[Test ()]
 		public void TestCase ()
 		{
 			String[] o = { "Я из Москвы", "Он прилетел в Берлин", "Я приехал из Москвы" };
@@ -50,7 +50,7 @@ namespace Babylon.Test
 			Assert.AreEqual(t[0], translations.getTranslation());
 
 			TranslatePresenter translatePresenter = new TranslatePresenter ();
-		}
+		}*/
 	}
 }
 
