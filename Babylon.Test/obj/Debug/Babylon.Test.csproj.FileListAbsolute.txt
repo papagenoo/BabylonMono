@@ -1,0 +1,11 @@
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.Test.dll
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.Test.pdb
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.dll
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.UI.dll
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\nunit.framework.dll
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.pdb
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\Babylon.UI.pdb
+C:\Dev\BabylonMono\Babylon.Test\bin\Debug\nunit.framework.xml
+C:\Dev\BabylonMono\Babylon.Test\obj\Debug\Babylon.Test.dll
+C:\Dev\BabylonMono\Babylon.Test\obj\Debug\Babylon.Test.pdb
+C:\Dev\BabylonMono\Babylon.Test\obj\Debug\Babylon.Test.csprojResolveAssemblyReference.cache

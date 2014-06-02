@@ -1,0 +1,7 @@
+C:\Dev\BabylonMono\Babylon.UI\bin\Debug\Babylon.UI.dll
+C:\Dev\BabylonMono\Babylon.UI\bin\Debug\Babylon.UI.pdb
+C:\Dev\BabylonMono\Babylon.UI\bin\Debug\Babylon.dll
+C:\Dev\BabylonMono\Babylon.UI\bin\Debug\Babylon.pdb
+C:\Dev\BabylonMono\Babylon.UI\obj\Debug\Babylon.UI.csprojResolveAssemblyReference.cache
+C:\Dev\BabylonMono\Babylon.UI\obj\Debug\Babylon.UI.dll
+C:\Dev\BabylonMono\Babylon.UI\obj\Debug\Babylon.UI.pdb

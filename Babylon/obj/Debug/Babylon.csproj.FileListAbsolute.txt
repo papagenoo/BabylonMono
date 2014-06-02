@@ -1,0 +1,4 @@
+C:\Dev\BabylonMono\Babylon\bin\Debug\Babylon.dll
+C:\Dev\BabylonMono\Babylon\bin\Debug\Babylon.pdb
+C:\Dev\BabylonMono\Babylon\obj\Debug\Babylon.dll
+C:\Dev\BabylonMono\Babylon\obj\Debug\Babylon.pdb
