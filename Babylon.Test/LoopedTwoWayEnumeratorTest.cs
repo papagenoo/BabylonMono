@@ -45,7 +45,7 @@ namespace Babylon.Test
 			Assert.IsTrue (enumerator.MovePrevious ());
 			Assert.AreEqual ("Third", enumerator.Current);
 			Assert.IsTrue (enumerator.MoveNext ());
-			Assert.AreEqual ("Second", enumerator.Current);
+			Assert.AreEqual ("First", enumerator.Current);
 		}
 	}
 }
