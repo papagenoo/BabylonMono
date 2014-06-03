@@ -10,6 +10,8 @@
     <AssemblyName>Babylon</AssemblyName>
     <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,16 +32,23 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Translations.cs" />
-    <Compile Include="Lang.cs" />
     <Compile Include="SoundPlayer.cs" />
     <Compile Include="Phrase.cs" />
-    <Compile Include="PhrasesCollection.cs" />
     <Compile Include="TwoWayEnumerator.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="LoopedTwoWayEnumerator.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="InMemoryDatabase.cs" />
+    <Compile Include="deprecated\Lang.cs" />
+    <Compile Include="deprecated\Translations.cs" />
+    <Compile Include="PopulateInMemoryDatabaseTransactionWithSampleData.cs" />
+    <Compile Include="Cmd.cs" />
+    <Compile Include="deprecated\PhrasesCollection.cs" />
+    <Compile Include="SoundPlayerBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="deprecated\" />
+  </ItemGroup>
 </Project>

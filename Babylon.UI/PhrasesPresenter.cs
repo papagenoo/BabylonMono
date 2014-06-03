@@ -7,5 +7,7 @@ namespace Babylon.UI
 		void NextChoosen ();
 		void PrevChoosen ();
 		void PlayChoosen ();
+		void StartAutoMode ();
+		void StopAutoMode ();
 	}
 }

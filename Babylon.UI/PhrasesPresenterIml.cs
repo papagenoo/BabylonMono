@@ -6,31 +6,26 @@ namespace Babylon.UI
 	{
 		PhrasesView view;
 		SoundPlayer player;
+		Database db;
+		int lessonNumber;
 
 		Phrase phrase;
 		ILoopedTwoWayEnumerator<Phrase> enumerator;
 
-		public PhrasesPresenterIml (PhrasesView view, SoundPlayer player)
+		public PhrasesPresenterIml (PhrasesView view, SoundPlayer player, Database db, int lessonNumber)
 		{
 			this.view = view;
 			this.player = player;
+			this.db = db;
+			this.lessonNumber = lessonNumber;
 
-			var phrases = new PhrasesCollection () {
-				new Phrase ("Das Restaurant", "Ресторан", "audio/lesson1/00_Das_Restaurant.mp3"),
-				new Phrase ("Ich bin sehr mude", "Я очень устал,", "audio/lesson1/01_Ich_bin_sehr_mude.mp3"),
-				new Phrase ("und ich habe Hunger", "и я голоден.", "audio/lesson1/02_und_ich_habe_Hunger.mp3"),
-				new Phrase ("Dort ist ein Restaurant", "Там (есть) ресторан", "audio/lesson1/03_Dort_ist_ein_Restaurant.mp3"),
-				new Phrase ("Es ist schon nicht wahr", "Он красив, не правда ли?", "audio/lesson1/04_Es_ist_schon_nicht_wahr.mp3"),
-				new Phrase ("Ja aber...", "Да... но...", "audio/lesson1/05_Ja_aber.mp3"),
-				new Phrase ("Haben Sie auch Hunger", "Вы (ведь) тоже голодны?", "audio/lesson1/06_Haben_Sie_auch_Hunger.mp3")
-			};
-
+			var phrases = db.GetPhrasesByLesson (lessonNumber);
 			enumerator = phrases.GetLoopedTwoWayEnumerator ();
 			enumerator.MoveNext ();
 			Update ();
 		}
 
-		#region Actions
+		#region PhrasesPresenter implementation
 
 		public void NextChoosen ()
 		{
@@ -47,6 +42,16 @@ namespace Babylon.UI
 		public void PlayChoosen ()
 		{
 			PlaySound ();
+		}
+
+		public void StartAutoMode ()
+		{
+			throw new NotImplementedException ();
+		}
+
+		public void StopAutoMode ()
+		{
+			throw new NotImplementedException ();
 		}
 
 		#endregion

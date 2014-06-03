@@ -19,8 +19,14 @@ namespace Babylon.Android
 			AssetFileDescriptor afd = Assets.OpenFd(filename);
 			player = new MediaPlayer();
 			player.SetDataSource(afd.FileDescriptor, afd.StartOffset, afd.Length);
+			player.Completion += DidFinishPlaying;			
 			player.Prepare();
-			player.Start();		
+			player.Start();	
+		}
+		
+		void DidFinishPlaying (object sender, AVStatusEventArgs e)
+		{
+			RaseFinishPlayingEvent();
 		}
 	}
 }

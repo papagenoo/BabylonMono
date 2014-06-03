@@ -1,33 +1,45 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.iOS/SoundPlayerIml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon\SoundPlayerBase.cs">
     <Files>
-      <File FileName="Babylon.Android/MainActivity.cs" Line="22" Column="1" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="67" Column="28" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="Babylon/SoundPlayer.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="17" Column="23" />
-      <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Android/SoundPlayerIml.cs" Line="1" Column="1" />
-      <File FileName="Babylon/PhrasesCollection.cs" Line="1" Column="1" />
-      <File FileName="Babylon/Phrase.cs" Line="10" Column="30" />
-      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="45" Column="3" />
-      <File FileName="Babylon.UI/PhrasesView.cs" Line="8" Column="30" />
+      <File FileName="Babylon.Android\MainActivity.cs" Line="53" Column="9" />
+      <File FileName="Babylon.iOS\Babylon.iOSViewController.cs" Line="67" Column="28" />
+      <File FileName="Babylon.UI\PhrasesPresenter.cs" Line="11" Column="12" />
+      <File FileName="Babylon.UI\PhrasesPresenterIml.cs" Line="30" Column="29" />
+      <File FileName="Babylon\SoundPlayer.cs" Line="9" Column="3" />
+      <File FileName="Babylon.Test\PhrasesPresenterTest.cs" Line="128" Column="4" />
+      <File FileName="Babylon\SoundPlayerBase.cs" Line="12" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Babylon" expanded="True" />
-          <Node name="Babylon.Android" selected="True" />
+          <Node name="Babylon" expanded="True">
+            <Node name="SoundPlayerBase.cs" selected="True" />
+          </Node>
           <Node name="Babylon.Test" expanded="True" />
           <Node name="Babylon.UI" expanded="True" />
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True">
+          <Node name="Babylon.Test" expanded="True">
+            <Node name="Babylon" expanded="True">
+              <Node name="Test" expanded="True">
+                <Node name="InMemoryPhrasesDatabaseTest" expanded="True" />
+                <Node name="LoopedTwoWayEnumeratorTest" expanded="True" />
+                <Node name="PhrasesPresenterTest" expanded="True">
+                  <Node name="SoundPlayerMockTest" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

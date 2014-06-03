@@ -5,7 +5,7 @@ using MonoTouch.Foundation;
 
 namespace Babylon.iOS
 {
-	public class SoundPlayerIml : SoundPlayer
+	public class SoundPlayerIml : SoundPlayerBase
 	{
 		AVAudioPlayer player;
 
@@ -13,6 +13,7 @@ namespace Babylon.iOS
 		{
 			try
 			{
+				/// todo: Устранить загадочную ошибку 
 				var Soundurl = NSUrl.FromFilename(filename);
 				if (player != null)
 					player.Stop();
@@ -23,7 +24,7 @@ namespace Babylon.iOS
 				player.Volume = 1.0f;
 				player.FinishedPlaying += DidFinishPlaying;
 				player.PrepareToPlay();
-				//player.Play();
+				player.Play();
 			}
 			catch (Exception e)
 			{
@@ -35,6 +36,7 @@ namespace Babylon.iOS
 		{
 			if (e.Status)
 				Console.WriteLine (e.Status);
+			RaseFinishPlayingEvent();
 		}
 	}
 }
