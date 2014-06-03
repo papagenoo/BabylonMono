@@ -12,11 +12,35 @@ namespace Babylon.iOS
 	[Register ("Babylon_iOSViewController")]
 	partial class Babylon_iOSViewController
 	{
+		[Outlet]
+		MonoTouch.UIKit.UILabel TextLabel { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UILabel TranslationLabel { get; set; }
+
+		[Action ("NextButtonClicked:")]
+		partial void NextButtonClicked (MonoTouch.Foundation.NSObject sender);
+
 		[Action ("playButtonClicked:")]
 		partial void playButtonClicked (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("PlaySoundButtonClicked:")]
+		partial void PlaySoundButtonClicked (MonoTouch.Foundation.NSObject sender);
+
+		[Action ("PrevButtonClicked:")]
+		partial void PrevButtonClicked (MonoTouch.Foundation.NSObject sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (TextLabel != null) {
+				TextLabel.Dispose ();
+				TextLabel = null;
+			}
+
+			if (TranslationLabel != null) {
+				TranslationLabel.Dispose ();
+				TranslationLabel = null;
+			}
 		}
 	}
 }

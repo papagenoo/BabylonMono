@@ -12,6 +12,8 @@
 	-r \
 	/Users/max/Projects/Babylon/Babylon/bin/Debug/Babylon.dll \
 	-r \
+	/Users/max/Projects/Babylon/Babylon.UI/bin/Debug/Babylon.UI.dll \
+	-r \
 	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
 	-r \
 	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \

@@ -14,11 +14,6 @@ namespace Babylon.iOS
 			// if you want to use a different Application Delegate class from "AppDelegate"
 			// you can specify it here.
 			UIApplication.Main (args, null, "AppDelegate");
-			Dictionary<string, string> d = new Dictionary<string, string>();
-			d.Add ("k", "v");
-			System.Console.WriteLine ("!!!");
-			System.Diagnostics.Debug.WriteLine("!!");
-
 		}
 	}
 }

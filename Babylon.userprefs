@@ -1,52 +1,33 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.Test\LoggerIml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.iOS/SoundPlayerIml.cs">
     <Files>
-      <File FileName="Babylon.Android\MainActivity.cs" Line="89" Column="1" />
-      <File FileName="Babylon.Test\Test.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Test\TwoWayEnumeratorTest.cs" Line="99" Column="3" />
-      <File FileName="Babylon.iOS\Babylon.iOSViewController.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS\Babylon.iOSViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="Babylon\SoundPlayer.cs" Line="7" Column="29" />
-      <File FileName="Babylon.iOS\SoundPlayerIml.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI\TranslatePresenter.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Android\SoundPlayerIml.cs" Line="1" Column="1" />
-      <File FileName="Babylon\PhrasesCollection.cs" Line="7" Column="1" />
-      <File FileName="Babylon\Phrase.cs" Line="3" Column="18" />
-      <File FileName="Babylon\Translations.cs" Line="11" Column="3" />
-      <File FileName="Babylon\TwoWayEnumerator.cs" Line="80" Column="23" />
-      <File FileName="Babylon\LoopedTwoWayEnumerator.cs" Line="33" Column="31" />
-      <File FileName="Babylon\Logger.cs" Line="18" Column="4" />
-      <File FileName="Babylon.Test\LoggerIml.cs" Line="12" Column="21" />
-      <File FileName="Babylon.Test\LoopedTwoWayEnumeratorTest.cs" Line="40" Column="49" />
+      <File FileName="Babylon.Android/MainActivity.cs" Line="22" Column="1" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="67" Column="28" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Babylon/SoundPlayer.cs" Line="1" Column="1" />
+      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="17" Column="23" />
+      <File FileName="Babylon.UI/TranslatePresenter.cs" Line="1" Column="1" />
+      <File FileName="Babylon.Android/SoundPlayerIml.cs" Line="1" Column="1" />
+      <File FileName="Babylon/PhrasesCollection.cs" Line="1" Column="1" />
+      <File FileName="Babylon/Phrase.cs" Line="10" Column="30" />
+      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="45" Column="3" />
+      <File FileName="Babylon.UI/PhrasesView.cs" Line="8" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Babylon" expanded="True" />
-          <Node name="Babylon.Android" expanded="True" />
-          <Node name="Babylon.iOS" expanded="True" />
-          <Node name="Babylon.Test" expanded="True">
-            <Node name="References" expanded="True" />
-            <Node name="LoggerIml.cs" selected="True" />
-          </Node>
+          <Node name="Babylon.Android" selected="True" />
+          <Node name="Babylon.Test" expanded="True" />
           <Node name="Babylon.UI" expanded="True" />
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State expanded="True" selected="True">
-          <Node name="Babylon.Test" expanded="True">
-            <Node name="Babylon" expanded="True">
-              <Node name="Test" expanded="True" />
-            </Node>
-          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

@@ -3,4 +3,5 @@ System.dll
 System.Core.dll
 Mono.Dynamic.Interpreter.dll
 System.Xml.dll
+Babylon.UI.dll
 Babylon.dll

@@ -2,8 +2,9 @@
 
 namespace Babylon.UI
 {
-	public interface PhraseView
+	public interface PhrasesView
 	{
+		string Text { set; }
+		string Translation { set; }
 	}
 }
-

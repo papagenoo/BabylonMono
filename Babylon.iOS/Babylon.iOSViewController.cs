@@ -3,12 +3,15 @@ using System.Drawing;
 using System.IO;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using Babylon.UI;
 
 namespace Babylon.iOS
 {
 
-	public partial class Babylon_iOSViewController : UIViewController
+	public partial class Babylon_iOSViewController : UIViewController, PhrasesView
 	{
+		PhrasesPresenter presenter;
+
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
@@ -30,9 +33,10 @@ namespace Babylon.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			System.Console.WriteLine ("!!!");
 
-			
+			SoundPlayer soundPlayer = new SoundPlayerIml ();
+			presenter = new PhrasesPresenter (this, soundPlayer);
+
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
@@ -58,11 +62,37 @@ namespace Babylon.iOS
 
 		SoundPlayer player = new SoundPlayerIml();
 
-		partial void playButtonClicked (NSObject sender)
+		partial void PlaySoundButtonClicked (NSObject sender)
 		{
-			Console.WriteLine("!!!!!! clicked");
-			var filename = Path.Combine("Audio", "2.mp3");
-			player.Play(filename);
+			presenter.PlayChoosen();
+//			var filename = Path.Combine("Audio", "2.mp3");
+//			player.Play(filename);
+		}
+
+		partial void NextButtonClicked (NSObject sender)
+		{
+			presenter.NextChoosen();
+		}
+
+		partial void PrevButtonClicked (NSObject sender)
+		{
+			presenter.PrevChoosen();
+		}
+
+		#endregion
+
+		#region PhrasesView implementation
+
+		public string Text {
+			set {
+				TextLabel.Text = value;
+			}
+		}
+
+		public string Translation {
+			set {
+				TranslationLabel.Text = value;
+			}
 		}
 
 		#endregion

@@ -1,2 +1,3 @@
 /Users/max/Projects/Babylon/Babylon.Android/bin/Debug/Babylon.Android.dll
 /Users/max/Projects/Babylon/Babylon/bin/Debug/Babylon.dll
+/Users/max/Projects/Babylon/Babylon.UI/bin/Debug/Babylon.UI.dll

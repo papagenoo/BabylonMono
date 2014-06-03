@@ -14,14 +14,16 @@ namespace Babylon.iOS
 			try
 			{
 				var Soundurl = NSUrl.FromFilename(filename);
+				if (player != null)
+					player.Stop();
 				player = AVAudioPlayer.FromUrl(Soundurl);
-				var onePlay = player;
-				onePlay.CurrentTime = onePlay.Duration*2;
-				onePlay.NumberOfLoops = 1;
-				onePlay.Volume = 1.0f;
-				onePlay.FinishedPlaying += DidFinishPlaying;
-				onePlay.PrepareToPlay();
-				onePlay.Play();
+				player.Stop();
+				player.CurrentTime = player.Duration * 2;
+				player.NumberOfLoops = 1;
+				player.Volume = 1.0f;
+				player.FinishedPlaying += DidFinishPlaying;
+				player.PrepareToPlay();
+				//player.Play();
 			}
 			catch (Exception e)
 			{

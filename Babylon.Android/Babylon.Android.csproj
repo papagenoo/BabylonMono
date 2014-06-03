@@ -67,18 +67,44 @@
       <Project>{2BDCE807-7914-417A-BE92-42AB253FA728}</Project>
       <Name>Babylon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Babylon.UI\Babylon.UI.csproj">
+      <Project>{45EA473D-A397-494C-82B2-CFC6DF6F616C}</Project>
+      <Name>Babylon.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\audio1\" />
+    <Folder Include="Assets\audio1\lesson1\" />
     <Folder Include="Assets\audio\" />
-    <Folder Include="Assets\audio\lesson1\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\audio\lesson1\00_Das_Restaurant.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\01_Ich_bin_sehr_mude.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\02_und_ich_habe_Hunger.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\03_Dort_ist_ein_Restaurant.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\04_Es_ist_schon_nicht_wahr.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\05_Ja_aber.mp3" />
-    <AndroidAsset Include="Assets\audio\lesson1\06_Haben_Sie_auch_Hunger.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\00_Das_Restaurant.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\01_Ich_bin_sehr_mude.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\02_und_ich_habe_Hunger.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\03_Dort_ist_ein_Restaurant.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\04_Es_ist_schon_nicht_wahr.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\05_Ja_aber.mp3" />
+    <AndroidAsset Include="Assets\audio1\lesson1\06_Haben_Sie_auch_Hunger.mp3" />
+    <AndroidAsset Include="..\audio\lesson1\00_Das_Restaurant.mp3">
+      <Link>Assets\audio\lesson1\00_Das_Restaurant.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\01_Ich_bin_sehr_mude.mp3">
+      <Link>Assets\audio\lesson1\01_Ich_bin_sehr_mude.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\02_und_ich_habe_Hunger.mp3">
+      <Link>Assets\audio\lesson1\02_und_ich_habe_Hunger.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\03_Dort_ist_ein_Restaurant.mp3">
+      <Link>Assets\audio\lesson1\03_Dort_ist_ein_Restaurant.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\04_Es_ist_schon_nicht_wahr.mp3">
+      <Link>Assets\audio\lesson1\04_Es_ist_schon_nicht_wahr.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\05_Ja_aber.mp3">
+      <Link>Assets\audio\lesson1\05_Ja_aber.mp3</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\audio\lesson1\06_Haben_Sie_auch_Hunger.mp3">
+      <Link>Assets\audio\lesson1\06_Haben_Sie_auch_Hunger.mp3</Link>
+    </AndroidAsset>
   </ItemGroup>
 </Project>

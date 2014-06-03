@@ -10,6 +10,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/phraseTextView"
         android:textAlignment="center" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/translationTextView"
+        android:textAlignment="center" />
     <Button
         android:id="@+id/listenButton"
         android:layout_width="fill_parent"

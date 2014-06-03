@@ -68,6 +68,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"Babylon.Android.dll",
 		"Babylon.dll",
+		"Babylon.UI.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
