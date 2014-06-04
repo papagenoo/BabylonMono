@@ -11,15 +11,11 @@ namespace Babylon
 
 		public void RaseFinishPlayingEvent()
 		{
-			OnFinishPlaying(new EventArgs (/*arguments*/));
+			if (PlayingFinished != null)
+				PlayingFinished.Invoke(this, new EventArgs ());
 		}
 
 		#endregion
 
-		protected virtual void OnFinishPlaying(EventArgs e)
-		{
-			PlayingFinished.Invoke(this, new EventArgs());
-		}
 	}
 }
-

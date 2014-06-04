@@ -1,0 +1,10 @@
+/Users/max/Projects/Babylon/Babylon.Test/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.Test.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.Test.dll
+/Users/max/Projects/Babylon/Babylon.Test/obj/Debug/Babylon.Test.dll
+/Users/max/Projects/Babylon/Babylon.Test/obj/Debug/Babylon.Test.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/nunit.framework.dll
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.dll
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.dll.mdb
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.UI.dll
+/Users/max/Projects/Babylon/Babylon.Test/bin/Debug/Babylon.UI.dll.mdb

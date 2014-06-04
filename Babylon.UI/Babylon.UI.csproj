@@ -10,8 +10,6 @@
     <AssemblyName>Babylon.UI</AssemblyName>
     <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,6 +34,8 @@
     <Compile Include="PhrasesView.cs" />
     <Compile Include="PhrasesPresenterIml.cs" />
     <Compile Include="PhrasesPresenter.cs" />
+    <Compile Include="PhrasesStateMachine.cs" />
+    <Compile Include="PhrasesPresenterAtions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -43,5 +43,8 @@
       <Project>{2BDCE807-7914-417A-BE92-42AB253FA728}</Project>
       <Name>Babylon</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PhrasesPresenterState\" />
   </ItemGroup>
 </Project>

@@ -63,6 +63,8 @@ namespace Babylon.Test
 		[Test ()]
 		public void InitialStateTest()
 		{
+			System.Diagnostics.Debug.WriteLine ("hgajajhd");
+
 			Assert.AreEqual (1, player.PlayCounter);
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
@@ -70,12 +72,12 @@ namespace Babylon.Test
 		}
 		
 		[Test ()]
-		public void PlayChoosenTest()
+		public void PlayChosenTest()
 		{
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.PlayChoosen ();
+			presenter.PlaySoundChosen ();
 			Assert.AreEqual (2, player.PlayCounter);
-			presenter.PlayChoosen ();
+			presenter.PlaySoundChosen ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
@@ -83,18 +85,18 @@ namespace Babylon.Test
 		}
 		
 		[Test ()]
-		public void NextChoosenTest()
+		public void NextChosenTest()
 		{
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.NextChoosen ();
+			presenter.NextChosen ();
 			Assert.AreEqual (2, player.PlayCounter);
 			Assert.AreEqual ("Ich bin sehr mude", view.Text);
 			Assert.AreEqual ("Я очень устал,", view.Translation);
 			Assert.AreEqual ("audio/lesson1/01_Ich_bin_sehr_mude.mp3", player.PlayingFileName);
-			presenter.NextChoosen ();
+			presenter.NextChosen ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("und ich habe Hunger", view.Text);
 			Assert.AreEqual ("и я голоден.", view.Translation);
@@ -102,13 +104,13 @@ namespace Babylon.Test
 		}
 		
 		[Test ()]
-		public void PrevChoosenTest()
+		public void PreviousChosenTest()
 		{
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.PrevChoosen ();
+			presenter.PreviousChosen ();
 			Assert.AreEqual ("Haben Sie auch Hunger", view.Text);
 			Assert.AreEqual ("Вы (ведь) тоже голодны?", view.Translation);
 			Assert.AreEqual ("audio/lesson1/06_Haben_Sie_auch_Hunger.mp3", player.PlayingFileName);

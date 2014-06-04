@@ -19,6 +19,8 @@ namespace Babylon.Android
 		TextView phraseTextView;
 		TextView translationTextView;
 		PhrasesPresenter presenter;
+		Database db;
+		int lessonNumber = 1;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -34,18 +36,24 @@ namespace Babylon.Android
 			translationTextView = FindViewById<TextView> (Resource.Id.translationTextView);
 
 			SoundPlayer soundPlayer = new SoundPlayerIml (Assets);
-			presenter = new PhrasesPresenter (this, soundPlayer);
+
+			db = new InMemoryDatabase ();
+
+			new PopulateInMemoryDatabaseWithSampleDataCmd (db as InMemoryDatabase)
+				.Execute ();
+
+			presenter = new PhrasesPresenterIml (this, soundPlayer, db, lessonNumber);
 
 			prevButton.Click += delegate {
-				presenter.PrevChoosen();
+				presenter.PreviousChosen();
 			};
 
 			nextButton.Click += delegate {
-				presenter.NextChoosen();
+				presenter.NextChosen();
 			};
 
 			listenButton.Click += delegate {
-				presenter.PlayChoosen();
+				presenter.PlaySoundChosen();
 			};
 		}
 

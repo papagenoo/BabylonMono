@@ -2,12 +2,15 @@ using System;
 
 namespace Babylon.UI
 {
-	public interface PhrasesPresenter
+	public interface PhrasesPresenter : PhrasesPresenterActions
 	{
-		void NextChoosen ();
-		void PrevChoosen ();
-		void PlayChoosen ();
-		void StartAutoMode ();
-		void StopAutoMode ();
+		void NextChosen ();
+		void PreviousChosen ();
+		void PlaySoundChosen ();
+		void EnterAutoModeChosen ();
+		void ExitAutoModeChosen ();
+
+
+
 	}
 }

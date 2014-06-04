@@ -9,6 +9,8 @@ namespace Babylon.UI
 		Database db;
 		int lessonNumber;
 
+		PhrasesStateMachine state;
+
 		Phrase phrase;
 		ILoopedTwoWayEnumerator<Phrase> enumerator;
 
@@ -19,6 +21,8 @@ namespace Babylon.UI
 			this.db = db;
 			this.lessonNumber = lessonNumber;
 
+			state = new PhrasesStateMachine (this);
+
 			var phrases = db.GetPhrasesByLesson (lessonNumber);
 			enumerator = phrases.GetLoopedTwoWayEnumerator ();
 			enumerator.MoveNext ();
@@ -27,31 +31,58 @@ namespace Babylon.UI
 
 		#region PhrasesPresenter implementation
 
-		public void NextChoosen ()
+
+		public void NextChosen ()
+		{
+			state.Handle (PhrasesPresenterEvent.MoveNext);
+		}
+
+		public void PreviousChosen ()
+		{
+			state.Handle (PhrasesPresenterEvent.MovePrevious);
+		}
+
+		public void PlaySoundChosen ()
+		{
+			state.Handle (PhrasesPresenterEvent.PlaySound);
+		}
+
+		public void EnterAutoModeChosen ()
+		{
+			state.Handle (PhrasesPresenterEvent.EnterAutoMode);
+		}
+
+		public void ExitAutoModeChosen ()
+		{
+			state.Handle (PhrasesPresenterEvent.ExitAutoMode);
+		}
+
+		public void MoveNext ()
 		{
 			enumerator.MoveNext ();
 			Update ();
 		}
 
-		public void PrevChoosen ()
+		public void MovePrevious ()
 		{
 			enumerator.MovePrevious ();
 			Update ();
 		}
 
-		public void PlayChoosen ()
+		/// <summary>
+		/// Plays the sound.
+		/// </summary>
+		public void PlaySound ()
 		{
-			PlaySound ();
+			player.Play (phrase.AudioFileName);
 		}
 
-		public void StartAutoMode ()
+		public void EnterAutoMode ()
 		{
-			throw new NotImplementedException ();
 		}
 
-		public void StopAutoMode ()
+		public void ExitAutoMode ()
 		{
-			throw new NotImplementedException ();
 		}
 
 		#endregion
@@ -76,12 +107,5 @@ namespace Babylon.UI
 			view.Translation = phrase.Translation;
 		}
 
-		/// <summary>
-		/// Plays the sound.
-		/// </summary>
-		void PlaySound ()
-		{
-			player.Play (phrase.AudioFileName);
-		}
 	}
 }

@@ -4,7 +4,7 @@ using Android.Content.Res;
 
 namespace Babylon.Android
 {
-	public class SoundPlayerIml : SoundPlayer
+	public class SoundPlayerIml : SoundPlayerBase
 	{
 		MediaPlayer player;
 		AssetManager Assets;
@@ -14,7 +14,7 @@ namespace Babylon.Android
 			Assets = assets;
 		}
 
-		public void Play (string filename)
+		public override void Play (string filename)
 		{
 			AssetFileDescriptor afd = Assets.OpenFd(filename);
 			player = new MediaPlayer();
@@ -24,9 +24,9 @@ namespace Babylon.Android
 			player.Start();	
 		}
 		
-		void DidFinishPlaying (object sender, AVStatusEventArgs e)
+		void DidFinishPlaying (object sender, EventArgs e)
 		{
-			RaseFinishPlayingEvent();
+			RaseFinishPlayingEvent ();
 		}
 	}
 }

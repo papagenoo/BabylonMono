@@ -11,6 +11,8 @@ namespace Babylon.iOS
 	public partial class Babylon_iOSViewController : UIViewController, PhrasesView
 	{
 		PhrasesPresenter presenter;
+		Database db;
+		int lessonNumber = 1;
 
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
@@ -35,7 +37,14 @@ namespace Babylon.iOS
 			base.ViewDidLoad ();
 
 			SoundPlayer soundPlayer = new SoundPlayerIml ();
-			presenter = new PhrasesPresenter (this, soundPlayer);
+
+			db = new InMemoryDatabase ();
+
+			new PopulateInMemoryDatabaseWithSampleDataCmd (db as InMemoryDatabase)
+				.Execute ();
+
+			this.Title = "Custom Title";
+			presenter = new PhrasesPresenterIml (this, soundPlayer, db, lessonNumber);
 
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
@@ -64,19 +73,19 @@ namespace Babylon.iOS
 
 		partial void PlaySoundButtonClicked (NSObject sender)
 		{
-			presenter.PlayChoosen();
+			presenter.PlaySoundChosen ();
 //			var filename = Path.Combine("Audio", "2.mp3");
 //			player.Play(filename);
 		}
 
 		partial void NextButtonClicked (NSObject sender)
 		{
-			presenter.NextChoosen();
+			presenter.NextChosen();
 		}
 
 		partial void PrevButtonClicked (NSObject sender)
 		{
-			presenter.PrevChoosen();
+			presenter.PreviousChosen();
 		}
 
 		#endregion

@@ -9,7 +9,7 @@ namespace Babylon.iOS
 	{
 		AVAudioPlayer player;
 
-		public void Play (string filename)
+		public override void Play (string filename)
 		{
 			try
 			{

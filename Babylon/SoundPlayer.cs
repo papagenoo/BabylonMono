@@ -6,6 +6,6 @@ namespace Babylon
 	{
 		void Play (string filename);
 		event EventHandler PlayingFinished;
-		void RaseFinishPlayingEvent();
+		void RaseFinishPlayingEvent ();
 	}
 }
