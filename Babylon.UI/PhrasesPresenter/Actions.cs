@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 namespace Babylon.UI
 {
-	public interface PhrasesPresenterActions
+	public interface PhrasesPresenter_Actions
 	{
 		void MoveNext ();
 		void MovePrevious ();
@@ -11,4 +11,3 @@ namespace Babylon.UI
 		void ExitAutoMode ();
 	}
 }
-
