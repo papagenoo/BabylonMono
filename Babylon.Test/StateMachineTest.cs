@@ -12,7 +12,8 @@ namespace Babylon.Test
 
 			public int MoveNextCounter = 0;
 			public int MovePreviousCounter = 0;
-			public int PlaySoundCounter = 0;
+			public int PlaySoundStartCounter = 0;
+			public int PlaySoundStopCounter = 0;
 			public int EnterAutoModeCounter = 0;
 			public int EnterManualModeCounter = 0;
 
@@ -28,7 +29,12 @@ namespace Babylon.Test
 
 			public void PlaySoundStart ()
 			{
-				PlaySoundCounter++;
+				PlaySoundStartCounter++;
+			}
+
+			public void PlaySoundStop ()
+			{
+				PlaySoundStopCounter++;
 			}
 
 			public void EnterAutoMode ()
@@ -41,8 +47,38 @@ namespace Babylon.Test
 				EnterManualModeCounter++;
 			}
 
+			public void DelayAndRaseNextEvent ()
+			{
+				throw new NotImplementedException ();
+			}
 
 
+			#region PhrasesPresenter implementation
+			public void HandleNextEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			public void HandlePreviousEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			public void HandlePlaySoundStartEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			public void HandlePlaySoundStopEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			public void HandleEnterAutoModeEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			public void HandleEnterManualModeEvent ()
+			{
+				throw new NotImplementedException ();
+			}
+			#endregion
 		}
 
 		PhrasesPresenterMock presenter;
@@ -124,10 +160,10 @@ namespace Babylon.Test
 		public void MoveNext_In_AwaitingInManualTest()
 		{
 			Assert.AreEqual (0, presenter.MoveNextCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MoveNext ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RaseNextEvent ();
 			Assert.AreEqual (1, presenter.MoveNextCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
@@ -135,19 +171,19 @@ namespace Babylon.Test
 		public void MovePrevious_In_AwaitingInManualTest()
 		{
 			Assert.AreEqual (0, presenter.MovePreviousCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MovePrevious ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePreviousEvent ();
 			Assert.AreEqual (1, presenter.MovePreviousCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
 		[Test ()]
 		public void PlaySoundStart_In_AwaitingInManualTest()
 		{
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.PlaySoundStart ();
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePlaySoundStartEvent ();
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
@@ -155,14 +191,14 @@ namespace Babylon.Test
 		[ExpectedException( typeof( InvalidStateTransitionException ) )]
 		public void PlaySoundStop_In_AwaitingInManualTest()
 		{
-			stateMachine.PlaySoundStop ();
+			stateMachine.RasePlaySoundStopEvent ();
 		}
 
 		[Test ()]
 		public void EnterAutoMode_In_AwaitingInManualTest()
 		{
 			Assert.AreEqual (0, presenter.EnterAutoModeCounter);
-			stateMachine.EnterAutoMode ();
+			stateMachine.RaseEnterAutoModeEvent ();
 			Assert.AreEqual (1, presenter.EnterAutoModeCounter);
 			Assert.IsTrue(IsAwaitingInAutoState ());
 		}
@@ -171,7 +207,7 @@ namespace Babylon.Test
 		public void EnterManualMode_In_AwaitingInManualTest()
 		{
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
-			stateMachine.EnterManualMode ();
+			stateMachine.RaseEnterManualModeEvent ();
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
 			Assert.IsTrue(IsAwaitingInManualState ());
 		}
@@ -184,10 +220,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInManualState.Instance;
 			Assert.AreEqual (0, presenter.MoveNextCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MoveNext ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RaseNextEvent ();
 			Assert.AreEqual (1, presenter.MoveNextCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
@@ -196,10 +232,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInManualState.Instance;
 			Assert.AreEqual (0, presenter.MovePreviousCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MovePrevious ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePreviousEvent ();
 			Assert.AreEqual (1, presenter.MovePreviousCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
@@ -207,9 +243,9 @@ namespace Babylon.Test
 		public void PlaySoundStart_In_PlayingInManualTest()
 		{
 			stateMachine.State = PlayingInManualState.Instance;
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.PlaySoundStart ();
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePlaySoundStartEvent ();
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
 
@@ -217,7 +253,7 @@ namespace Babylon.Test
 		public void PlaySoundStop_In_PlayingInManualTest()
 		{
 			stateMachine.State = PlayingInManualState.Instance;
-			stateMachine.PlaySoundStop ();
+			stateMachine.RasePlaySoundStopEvent ();
 			Assert.IsTrue(IsAwaitingInManualState ());
 		}
 
@@ -226,7 +262,7 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInManualState.Instance;
 			Assert.AreEqual (0, presenter.EnterAutoModeCounter);
-			stateMachine.EnterAutoMode ();
+			stateMachine.RaseEnterAutoModeEvent ();
 			Assert.AreEqual (1, presenter.EnterAutoModeCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
@@ -236,7 +272,7 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInManualState.Instance;
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
-			stateMachine.EnterManualMode ();
+			stateMachine.RaseEnterManualModeEvent ();
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}
@@ -249,10 +285,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.MoveNextCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MoveNext ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RaseNextEvent ();
 			Assert.AreEqual (1, presenter.MoveNextCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -261,10 +297,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.MovePreviousCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MovePrevious ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePreviousEvent ();
 			Assert.AreEqual (1, presenter.MovePreviousCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -272,9 +308,9 @@ namespace Babylon.Test
 		public void PlaySoundStart_In_AwaitingInAutoTest()
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.PlaySoundStart ();
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePlaySoundStartEvent ();
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -283,7 +319,7 @@ namespace Babylon.Test
 		public void PlaySoundStop_In_AwaitingInAutoTest()
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
-			stateMachine.PlaySoundStop ();
+			stateMachine.RasePlaySoundStopEvent ();
 		}
 
 		[Test ()]
@@ -291,7 +327,7 @@ namespace Babylon.Test
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
-			stateMachine.EnterAutoMode ();
+			stateMachine.RaseEnterAutoModeEvent ();
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
 			Assert.IsTrue (IsAwaitingInAutoState ());
 		}
@@ -301,7 +337,7 @@ namespace Babylon.Test
 		{
 			stateMachine.State = AwaitingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
-			stateMachine.EnterManualMode ();
+			stateMachine.RaseEnterManualModeEvent ();
 			Assert.AreEqual (1, presenter.EnterManualModeCounter);
 			Assert.IsTrue(IsAwaitingInManualState ());
 		}
@@ -314,10 +350,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.MoveNextCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MoveNext ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RaseNextEvent ();
 			Assert.AreEqual (1, presenter.MoveNextCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -326,10 +362,10 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.MovePreviousCounter);
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.MovePrevious ();
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePreviousEvent ();
 			Assert.AreEqual (1, presenter.MovePreviousCounter);
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -337,9 +373,9 @@ namespace Babylon.Test
 		public void PlaySoundStart_In_PlayingInAutoTest()
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
-			Assert.AreEqual (0, presenter.PlaySoundCounter);
-			stateMachine.PlaySoundStart ();
-			Assert.AreEqual (1, presenter.PlaySoundCounter);
+			Assert.AreEqual (0, presenter.PlaySoundStartCounter);
+			stateMachine.RasePlaySoundStartEvent ();
+			Assert.AreEqual (1, presenter.PlaySoundStartCounter);
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -348,7 +384,7 @@ namespace Babylon.Test
 		public void PlaySoundStop_In_PlayingInAutoTest()
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
-			stateMachine.PlaySoundStop ();
+			stateMachine.RasePlaySoundStopEvent ();
 			Assert.IsTrue(IsAwaitingInAutoState ());
 		}
 
@@ -356,7 +392,7 @@ namespace Babylon.Test
 		public void EnterAutoMode_In_PlayingInAutoTest()
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
-			stateMachine.EnterAutoMode ();
+			stateMachine.RaseEnterAutoModeEvent ();
 			Assert.IsTrue(IsPlayingInAutoState ());
 		}
 
@@ -365,7 +401,7 @@ namespace Babylon.Test
 		{
 			stateMachine.State = PlayingInAutoState.Instance;
 			Assert.AreEqual (0, presenter.EnterManualModeCounter);
-			stateMachine.EnterManualMode ();
+			stateMachine.RaseEnterManualModeEvent ();
 			Assert.AreEqual (1, presenter.EnterManualModeCounter);
 			Assert.IsTrue(IsPlayingInManualState ());
 		}

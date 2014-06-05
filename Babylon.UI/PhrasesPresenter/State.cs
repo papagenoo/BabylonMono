@@ -14,11 +14,11 @@ namespace Babylon.UI
 			// Empty default implementation
 		}
 
-		public abstract void MovePrevious (StateMachine context);
-		public abstract void MoveNext (StateMachine context);
-		public abstract void PlaySoundStart (StateMachine context);
-		public abstract void PlaySoundStop (StateMachine context);
-		public abstract void EnterAutoMode (StateMachine context);
-		public abstract void EnterManualMode (StateMachine context);
+		public abstract void HandlePreviousEvent (StateMachine context);
+		public abstract void HandleNextEvent (StateMachine context);
+		public abstract void HandlePlaySoundStartEvent (StateMachine context);
+		public abstract void HandlePlaySoundStopEvent (StateMachine context);
+		public abstract void HandleEnterAutoModeEvent (StateMachine context);
+		public abstract void HandleEnterManualModeEvent (StateMachine context);
 	}
 }

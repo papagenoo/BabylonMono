@@ -4,9 +4,9 @@ namespace Babylon.UI
 {
 	public abstract class AutoState : State
 	{
-		public override void EnterAutoMode (StateMachine context)
+		public override void HandleEnterAutoModeEvent (StateMachine context)
 		{
-			throw new InvalidStateTransitionException ();
+			// Empty default implementation
 		}
 	}
 }

@@ -63,8 +63,6 @@ namespace Babylon.Test
 		[Test ()]
 		public void InitialStateTest()
 		{
-			System.Diagnostics.Debug.WriteLine ("hgajajhd");
-
 			Assert.AreEqual (1, player.PlayCounter);
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
@@ -75,9 +73,9 @@ namespace Babylon.Test
 		public void PlayChosenTest()
 		{
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.PlaySoundStart ();
+			presenter.HandlePlaySoundStartEvent ();
 			Assert.AreEqual (2, player.PlayCounter);
-			presenter.PlaySoundStart ();
+			presenter.HandlePlaySoundStartEvent ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
@@ -91,12 +89,12 @@ namespace Babylon.Test
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.MoveNext ();
+			presenter.HandleNextEvent ();
 			Assert.AreEqual (2, player.PlayCounter);
 			Assert.AreEqual ("Ich bin sehr mude", view.Text);
 			Assert.AreEqual ("Я очень устал,", view.Translation);
 			Assert.AreEqual ("audio/lesson1/01_Ich_bin_sehr_mude.mp3", player.PlayingFileName);
-			presenter.MoveNext ();
+			presenter.HandleNextEvent ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("und ich habe Hunger", view.Text);
 			Assert.AreEqual ("и я голоден.", view.Translation);
@@ -110,7 +108,7 @@ namespace Babylon.Test
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.MovePrevious ();
+			presenter.HandlePreviousEvent ();
 			Assert.AreEqual ("Haben Sie auch Hunger", view.Text);
 			Assert.AreEqual ("Вы (ведь) тоже голодны?", view.Translation);
 			Assert.AreEqual ("audio/lesson1/06_Haben_Sie_auch_Hunger.mp3", player.PlayingFileName);
@@ -136,6 +134,55 @@ namespace Babylon.Test
 
 			Assert.That (playingFinishedWired, Is.True);
 			Assert.That (playingFinishedWired1, Is.True);
+		}
+
+
+		DelayedAction da;
+
+		[Test ()]
+		public void PlayStop_In_PlayingInAutoState_Test()
+		{
+			Logger.Write ("!!!!!!");
+
+			SoundPlayerMock player = new SoundPlayerMock ();
+			presenter = new PhrasesPresenterIml (view, player, db, lessonNumber, PlayingInAutoState.Instance);
+			Assert.AreEqual ("Das Restaurant", view.Text);
+			Assert.AreEqual ("Ресторан", view.Translation);
+			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
+			Assert.AreEqual (1, player.PlayCounter);
+			player.RaseFinishPlayingEvent ();
+			Assert.AreEqual (1, player.PlayCounter);
+			presenter.HandleNextEvent ();
+			Assert.AreEqual (2, player.PlayCounter);
+
+//			Assert.AreEqual ("Haben Sie auch Hunger", view.Text);
+//			Assert.AreEqual ("Вы (ведь) тоже голодны?", view.Translation);
+//			Assert.AreEqual ("audio/lesson1/06_Haben_Sie_auch_Hunger.mp3", player.PlayingFileName);
+//			Assert.AreEqual (2, player.PlayCounter);
+
+			Logger.Write ("!!!!!!");
+
+			da = new DelayedAction (() => {
+				Logger.Write ("ds!!!!!!");
+			}, 10000);
+			Logger.Write ("Before");
+			Thread.Sleep (5000);
+			Logger.Write ("After");
+			Assert.AreEqual (1, 2);
+
+		}
+	}
+
+	public class DelayedAction
+	{
+		Timer timer;
+
+		public DelayedAction (Action action, int timeout)
+		{
+			timer = new Timer ((o) => {
+				action.Invoke ();
+				timer.Dispose();
+			}, null, 500, 10000); 
 		}
 	}
 }

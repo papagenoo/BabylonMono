@@ -13,34 +13,34 @@ namespace Babylon.UI
 
 		#region implemented abstract members of State
 
-		public override void MovePrevious (StateMachine context)
+		public override void HandlePreviousEvent (StateMachine context)
 		{
-			context.PresenterMovePrevious ();
-			context.PresenterPlaySoundStart ();
+			context.MovePrevious ();
+			context.PlaySoundStart ();
 			context.ChangeState (PlayingInManualState.Instance);
 		}
 
-		public override void MoveNext (StateMachine context)
+		public override void HandleNextEvent (StateMachine context)
 		{
-			context.PresenterMoveNext ();
-			context.PresenterPlaySoundStart ();
+			context.MoveNext ();
+			context.PlaySoundStart ();
 			context.ChangeState (PlayingInManualState.Instance);
 		}
 
-		public override void PlaySoundStart (StateMachine context)
+		public override void HandlePlaySoundStartEvent (StateMachine context)
 		{
-			context.PresenterPlaySoundStart ();
+			context.PlaySoundStart ();
 			context.ChangeState (PlayingInManualState.Instance);
 		}
 
-		public override void PlaySoundStop (StateMachine context)
+		public override void HandlePlaySoundStopEvent (StateMachine context)
 		{
 			throw new InvalidStateTransitionException ();
 		}
 
-		public override void EnterAutoMode (StateMachine context)
+		public override void HandleEnterAutoModeEvent (StateMachine context)
 		{
-			context.PresenterEnterAutoMode ();
+			context.EnterAutoMode ();
 			context.ChangeState(AwaitingInAutoState.Instance);
 		}
 

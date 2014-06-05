@@ -7,9 +7,14 @@ namespace Babylon.UI
 		PhrasesPresenter presenter;
 
 		public StateMachine (PhrasesPresenter presenter)
+			: this (presenter, AwaitingInManualState.Instance)
+		{
+		}
+
+		public StateMachine (PhrasesPresenter presenter, State initialState)
 		{
 			this.presenter = presenter;
-			State = AwaitingInManualState.Instance;
+			State = initialState;
 		}
 
 		/// <summary>
@@ -32,34 +37,34 @@ namespace Babylon.UI
 
 		#region Events
 
-		public void MovePrevious ()
+		public void RasePreviousEvent ()
 		{
-			State.MovePrevious (this);
+			State.HandlePreviousEvent (this);
 		}
 
-		public void MoveNext ()
+		public void RaseNextEvent ()
 		{
-			State.MoveNext (this);
+			State.HandleNextEvent (this);
 		}
 
-		public void PlaySoundStart ()
+		public void RasePlaySoundStartEvent ()
 		{
-			State.PlaySoundStart (this);
+			State.HandlePlaySoundStartEvent (this);
 		}
 
-		public void PlaySoundStop ()
+		public void RasePlaySoundStopEvent ()
 		{
-			State.PlaySoundStop (this);
+			State.HandlePlaySoundStopEvent (this);
 		}
 
-		public void EnterAutoMode ()
+		public void RaseEnterAutoModeEvent ()
 		{
-			State.EnterAutoMode (this);
+			State.HandleEnterAutoModeEvent (this);
 		}
 
-		public void EnterManualMode ()
+		public void RaseEnterManualModeEvent ()
 		{
-			State.EnterManualMode (this);
+			State.HandleEnterManualModeEvent (this);
 		}
 
 		#endregion
@@ -67,31 +72,31 @@ namespace Babylon.UI
 
 		#region Presenter methods
 
-		public void PresenterMoveNext ()
+		public void MoveNext ()
 		{
 			presenter.MoveNext ();
 		}
 
-		public void PresenterMovePrevious ()
+		public void MovePrevious ()
 		{
 			presenter.MovePrevious ();
 		}
 
-		public void PresenterPlaySoundStart ()
+		public void PlaySoundStart ()
 		{
 			presenter.PlaySoundStart ();
 		}
 
-		public void PresenterEnterAutoMode ()
+		public void EnterAutoMode ()
 		{
 			presenter.EnterAutoMode ();
 		}
 
-
-		public void PresenterEnterManualMode ()
+		public void EnterManualMode ()
 		{
 			presenter.EnterManualMode ();
 		}
+
 		#endregion
 	}
 }
