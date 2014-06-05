@@ -75,9 +75,9 @@ namespace Babylon.Test
 		public void PlayChosenTest()
 		{
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.PlaySoundRequest ();
+			presenter.PlaySoundStart ();
 			Assert.AreEqual (2, player.PlayCounter);
-			presenter.PlaySoundRequest ();
+			presenter.PlaySoundStart ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("Das Restaurant", view.Text);
 			Assert.AreEqual ("Ресторан", view.Translation);
@@ -91,12 +91,12 @@ namespace Babylon.Test
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.MoveNextRequest ();
+			presenter.MoveNext ();
 			Assert.AreEqual (2, player.PlayCounter);
 			Assert.AreEqual ("Ich bin sehr mude", view.Text);
 			Assert.AreEqual ("Я очень устал,", view.Translation);
 			Assert.AreEqual ("audio/lesson1/01_Ich_bin_sehr_mude.mp3", player.PlayingFileName);
-			presenter.MoveNextRequest ();
+			presenter.MoveNext ();
 			Assert.AreEqual (3, player.PlayCounter);
 			Assert.AreEqual ("und ich habe Hunger", view.Text);
 			Assert.AreEqual ("и я голоден.", view.Translation);
@@ -110,7 +110,7 @@ namespace Babylon.Test
 			Assert.AreEqual ("Ресторан", view.Translation);
 			Assert.AreEqual ("audio/lesson1/00_Das_Restaurant.mp3", player.PlayingFileName);
 			Assert.AreEqual (1, player.PlayCounter);
-			presenter.MovePreviousRequest ();
+			presenter.MovePrevious ();
 			Assert.AreEqual ("Haben Sie auch Hunger", view.Text);
 			Assert.AreEqual ("Вы (ведь) тоже голодны?", view.Translation);
 			Assert.AreEqual ("audio/lesson1/06_Haben_Sie_auch_Hunger.mp3", player.PlayingFileName);

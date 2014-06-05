@@ -4,121 +4,94 @@ namespace Babylon.UI
 {
 	public class StateMachine
 	{
-		internal static AwaitingInAutoState awaitingInAutoState =
-			new AwaitingInAutoState ();
-
-		internal static AwaitingInManualState awaitingInManualState =
-			new AwaitingInManualState ();
-
-		internal static PlayingInAutoState playingInAutoState =
-			new PlayingInAutoState ();
-
-		internal static PlayingInManualState playingInManualState =
-			new PlayingInManualState ();
-			
 		PhrasesPresenter presenter;
-		internal State state = awaitingInManualState;
 
 		public StateMachine (PhrasesPresenter presenter)
 		{
 			this.presenter = presenter;
+			State = AwaitingInManualState.Instance;
 		}
 
-		public void SetAwaitingInAutoState ()
+		/// <summary>
+		/// Gets or sets the state.
+		/// Sets state without proceeding 
+		/// </summary>
+		/// <value>The state.</value>
+		public State State { get; set; }
+
+		/// <summary>
+		/// Sets state and proceed ExitState and EnterState actions
+		/// </summary>
+		/// <param name="state">State.</param>
+		public void ChangeState (State state)
 		{
-			state = awaitingInAutoState;
+			State.ExitState ();
+			State = state;
+			State.EnterState ();
 		}
 
-		public bool IsAwaitingInAutoState ()
-		{
-			return state == awaitingInAutoState;
-		}
-
-		public void SetAwaitingInManualState ()
-		{
-			state = awaitingInManualState;
-		}
-
-		public bool IsAwaitingInManualState ()
-		{
-			return state == awaitingInManualState;
-		}
-
-
-
-		public void SetPlayingInAutoState ()
-		{
-			state = playingInAutoState;
-		}
-
-		public bool IsPlayingInAutoState ()
-		{
-			return state == playingInAutoState;
-		}
-
-		public void SetPlayingInManualState ()
-		{
-			state = playingInManualState;
-		}
-
-		public bool IsPlayingInManualState ()
-		{
-			return state == playingInManualState;
-		}
-
-
-		#region Events implementation
+		#region Events
 
 		public void MovePrevious ()
 		{
-			state.MovePrevious (this);
+			State.MovePrevious (this);
 		}
 
 		public void MoveNext ()
 		{
-			state.MoveNext (this);
+			State.MoveNext (this);
 		}
 
 		public void PlaySoundStart ()
 		{
-			state.PlaySoundStart (this);
+			State.PlaySoundStart (this);
 		}
 
 		public void PlaySoundStop ()
 		{
-			state.PlaySoundStop (this);
+			State.PlaySoundStop (this);
 		}
 
 		public void EnterAutoMode ()
 		{
-			state.EnterAutoMode (this);
+			State.EnterAutoMode (this);
 		}
 
-		public void ExitAutoMode ()
+		public void EnterManualMode ()
 		{
-			state.ExitAutoMode (this);
+			State.EnterManualMode (this);
 		}
 
 		#endregion
 
-		public void DoMoveNext () 
+
+		#region Presenter methods
+
+		public void PresenterMoveNext ()
 		{
 			presenter.MoveNext ();
 		}
 
-		public void DoMovePrevious () 
+		public void PresenterMovePrevious ()
 		{
 			presenter.MovePrevious ();
 		}
 
-		public void DoPlaySoundStart () 
+		public void PresenterPlaySoundStart ()
 		{
 			presenter.PlaySoundStart ();
 		}
 
-		public void DoEnterAutoMode () 
+		public void PresenterEnterAutoMode ()
 		{
 			presenter.EnterAutoMode ();
 		}
+
+
+		public void PresenterEnterManualMode ()
+		{
+			presenter.EnterManualMode ();
+		}
+		#endregion
 	}
 }

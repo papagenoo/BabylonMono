@@ -4,26 +4,33 @@ namespace Babylon.UI
 {
 	public class AwaitingInManualState : ManualState
 	{
+		public static AwaitingInManualState Instance = new AwaitingInManualState ();
+
+		private AwaitingInManualState () 
+		{
+			// Only one stateless instance
+		}
+
 		#region implemented abstract members of State
 
 		public override void MovePrevious (StateMachine context)
 		{
-			context.SetPlayingInManualState ();
-			context.DoMovePrevious ();
-			context.DoPlaySoundStart ();
+			context.PresenterMovePrevious ();
+			context.PresenterPlaySoundStart ();
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void MoveNext (StateMachine context)
 		{
-			context.SetPlayingInManualState ();
-			context.DoMoveNext ();
-			context.DoPlaySoundStart ();
+			context.PresenterMoveNext ();
+			context.PresenterPlaySoundStart ();
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void PlaySoundStart (StateMachine context)
 		{
-			context.SetPlayingInManualState ();
-			context.DoPlaySoundStart ();
+			context.PresenterPlaySoundStart ();
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void PlaySoundStop (StateMachine context)
@@ -33,8 +40,8 @@ namespace Babylon.UI
 
 		public override void EnterAutoMode (StateMachine context)
 		{
-			context.SetAwaitingInAutoState ();
-			context.DoEnterAutoMode ();
+			context.PresenterEnterAutoMode ();
+			context.ChangeState(AwaitingInAutoState.Instance);
 		}
 
 		#endregion		

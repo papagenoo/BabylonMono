@@ -9,6 +9,6 @@ namespace Babylon.UI
 		void MovePrevious ();
 		void PlaySoundStart ();
 		void EnterAutoMode ();
-		void ExitAutoMode ();
+		void EnterManualMode ();
 	}
 }

@@ -56,7 +56,7 @@ namespace Babylon.UI
 		{
 		}
 
-		public void ExitAutoMode ()
+		public void EnterManualMode ()
 		{
 		}
 

@@ -7,6 +7,8 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Babylon.Test</RootNamespace>
     <AssemblyName>Babylon.Test</AssemblyName>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +41,7 @@
     <Compile Include="InMemoryPhrasesDatabaseTest.cs" />
     <Compile Include="PhraseTest.cs" />
     <Compile Include="StateMachineTest.cs" />
+    <Compile Include="PhrasesPresenterTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -55,7 +58,6 @@
     <Folder Include="deprecated\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="PhrasesPresenterTest.cs" />
     <None Include="deprecated\Test.cs" />
   </ItemGroup>
 </Project>

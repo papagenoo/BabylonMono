@@ -4,36 +4,45 @@ namespace Babylon.UI
 {
 	public class PlayingInAutoState : AutoState
 	{
+		public static PlayingInAutoState Instance = new PlayingInAutoState ();
+		
+		private PlayingInAutoState () 
+		{
+			// Only one stateless instance
+		}
+
 		#region implemented abstract members of State
 
 		public override void MovePrevious (StateMachine context)
 		{
-			throw new NotImplementedException ();
+			context.PresenterMovePrevious ();
+			context.PresenterPlaySoundStart ();		
 		}
 
 		public override void MoveNext (StateMachine context)
 		{
-			context.DoMoveNext ();
-			context.DoPlaySoundStart ();		}
+			context.PresenterMoveNext ();
+			context.PresenterPlaySoundStart ();		
+		}
 
 		public override void PlaySoundStart (StateMachine context)
 		{
-			throw new NotImplementedException ();
+			context.PresenterPlaySoundStart ();		
 		}
 
 		public override void PlaySoundStop (StateMachine context)
 		{
-			throw new NotImplementedException ();
+			context.ChangeState (AwaitingInAutoState.Instance);
 		}
 
 		public override void EnterAutoMode (StateMachine context)
 		{
-			throw new NotImplementedException ();
 		}
 
-		public override void ExitAutoMode (StateMachine context)
+		public override void EnterManualMode (StateMachine context)
 		{
-			throw new NotImplementedException ();
+			context.PresenterEnterManualMode ();
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		#endregion
