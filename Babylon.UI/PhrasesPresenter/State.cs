@@ -2,37 +2,17 @@ using System;
 
 namespace Babylon.UI
 {
-	public abstract class PhrasesPresenter_State : PhrasesPresenter_Actions
+	public abstract class State
 	{
-		#region PhrasesPresenterAtions implementation
+		#region Events implementation
 
-		public void MoveNext ()
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void MovePrevious ()
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void PlaySound ()
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void EnterAutoMode ()
-		{
-			throw new NotImplementedException ();
-		}
-
-		public void ExitAutoMode ()
-		{
-			throw new NotImplementedException ();
-		}
+		public abstract void MovePrevious (StateMachine context);
+		public abstract void MoveNext (StateMachine context);
+		public abstract void PlaySoundStart (StateMachine context);
+		public abstract void PlaySoundStop (StateMachine context);
+		public abstract void EnterAutoMode (StateMachine context);
+		public abstract void ExitAutoMode (StateMachine context);
 
 		#endregion
-
-
 	}
 }

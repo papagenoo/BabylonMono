@@ -4,12 +4,13 @@ namespace Babylon.UI
 {
 	public class PhrasesPresenterIml : PhrasesPresenter
 	{
+
 		PhrasesView view;
 		SoundPlayer player;
 		Database db;
 		int lessonNumber;
 
-		PhrasesStateMachine state;
+		StateMachine stateMachine;
 
 		Phrase phrase;
 		ILoopedTwoWayEnumerator<Phrase> enumerator;
@@ -21,41 +22,15 @@ namespace Babylon.UI
 			this.db = db;
 			this.lessonNumber = lessonNumber;
 
-			state = new PhrasesStateMachine (this);
+			stateMachine = new StateMachine (this);
 
 			var phrases = db.GetPhrasesByLesson (lessonNumber);
 			enumerator = phrases.GetLoopedTwoWayEnumerator ();
 			enumerator.MoveNext ();
 			Update ();
 		}
-
+			
 		#region PhrasesPresenter implementation
-
-
-		public void NextChosen ()
-		{
-			state.Handle (PhrasesPresenterEvent.MoveNext);
-		}
-
-		public void PreviousChosen ()
-		{
-			state.Handle (PhrasesPresenterEvent.MovePrevious);
-		}
-
-		public void PlaySoundChosen ()
-		{
-			state.Handle (PhrasesPresenterEvent.PlaySound);
-		}
-
-		public void EnterAutoModeChosen ()
-		{
-			state.Handle (PhrasesPresenterEvent.EnterAutoMode);
-		}
-
-		public void ExitAutoModeChosen ()
-		{
-			state.Handle (PhrasesPresenterEvent.ExitAutoMode);
-		}
 
 		public void MoveNext ()
 		{
@@ -72,7 +47,7 @@ namespace Babylon.UI
 		/// <summary>
 		/// Plays the sound.
 		/// </summary>
-		public void PlaySound ()
+		public void PlaySoundStart ()
 		{
 			player.Play (phrase.AudioFileName);
 		}
@@ -95,7 +70,7 @@ namespace Babylon.UI
 		{
 			phrase = enumerator.Current;
 			UpdateView ();
-			PlaySound ();
+			PlaySoundStart ();
 		}
 
 		/// <summary>

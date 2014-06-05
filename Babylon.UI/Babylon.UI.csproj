@@ -10,8 +10,6 @@
     <AssemblyName>Babylon.UI</AssemblyName>
     <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,18 +34,14 @@
     <Compile Include="PhrasesView.cs" />
     <Compile Include="PhrasesPresenterIml.cs" />
     <Compile Include="PhrasesPresenter.cs" />
-    <Compile Include="PhrasesStateMachine.cs" />
     <Compile Include="PhrasesPresenter\State.cs" />
-    <Compile Include="PhrasesPresenter\Actions.cs" />
-    <Compile Include="PhrasesPresenter\Context.cs" />
     <Compile Include="PhrasesPresenter\AwaitingInManualState.cs" />
     <Compile Include="PhrasesPresenter\ManualState.cs" />
-    <Compile Include="PhrasesPresenter\PlayingInManualState.cs" />
     <Compile Include="PhrasesPresenter\AutoState.cs" />
-    <Compile Include="PhrasesPresenter\PlayingInAutoState.cs" />
     <Compile Include="PhrasesPresenter\AwaitingInAutoState.cs" />
-    <Compile Include="PhrasesPresenter\PhrasesPresenterEvent.cs" />
-    <Compile Include="PhrasesPresenter\Requests.cs" />
+    <Compile Include="PhrasesPresenter\PlayingInAutoState.cs" />
+    <Compile Include="PhrasesPresenter\PlayingInManualState.cs" />
+    <Compile Include="PhrasesPresenter\StateMachine.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>

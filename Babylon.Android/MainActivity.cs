@@ -45,15 +45,15 @@ namespace Babylon.Android
 			presenter = new PhrasesPresenterIml (this, soundPlayer, db, lessonNumber);
 
 			prevButton.Click += delegate {
-				presenter.PreviousChosen();
+				presenter.MovePrevious ();
 			};
 
 			nextButton.Click += delegate {
-				presenter.NextChosen();
+				presenter.MoveNext ();
 			};
 
 			listenButton.Click += delegate {
-				presenter.PlaySoundChosen();
+				presenter.PlaySoundStart ();
 			};
 		}
 

@@ -3,8 +3,12 @@ using Babylon.UI;
 
 namespace Babylon.UI
 {
-	public interface PhrasesPresenter : PhrasesPresenter_Actions, PhrasesPresenter_Requests
+	public interface PhrasesPresenter
 	{
-
+		void MoveNext ();
+		void MovePrevious ();
+		void PlaySoundStart ();
+		void EnterAutoMode ();
+		void ExitAutoMode ();
 	}
 }

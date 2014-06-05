@@ -69,23 +69,23 @@ namespace Babylon.iOS
 			base.ViewDidDisappear (animated);
 		}
 
-		SoundPlayer player = new SoundPlayerIml();
+//		SoundPlayer player = new SoundPlayerIml();
 
 		partial void PlaySoundButtonClicked (NSObject sender)
 		{
-			presenter.PlaySoundChosen ();
+			presenter.PlaySoundStart ();
 //			var filename = Path.Combine("Audio", "2.mp3");
 //			player.Play(filename);
 		}
 
 		partial void NextButtonClicked (NSObject sender)
 		{
-			presenter.NextChosen();
+			presenter.MoveNext ();
 		}
 
 		partial void PrevButtonClicked (NSObject sender)
 		{
-			presenter.PreviousChosen();
+			presenter.MovePrevious ();
 		}
 
 		#endregion

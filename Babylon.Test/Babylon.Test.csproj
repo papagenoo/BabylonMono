@@ -36,10 +36,9 @@
     <Compile Include="LoggerIml.cs" />
     <Compile Include="TwoWayEnumeratorTest.cs" />
     <Compile Include="LoopedTwoWayEnumeratorTest.cs" />
-    <Compile Include="PhrasesPresenterTest.cs" />
     <Compile Include="InMemoryPhrasesDatabaseTest.cs" />
     <Compile Include="PhraseTest.cs" />
-    <Compile Include="deprecated\Test.cs" />
+    <Compile Include="StateMachineTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -54,5 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="deprecated\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PhrasesPresenterTest.cs" />
+    <None Include="deprecated\Test.cs" />
   </ItemGroup>
 </Project>

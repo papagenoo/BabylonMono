@@ -2,7 +2,11 @@ using System;
 
 namespace Babylon.UI
 {
-	public abstract class PhrasesPresenter_AutoState : PhrasesPresenter_State
+	public abstract class AutoState : State
 	{
+		public override void EnterAutoMode (StateMachine context)
+		{
+			throw new InvalidStateTransitionException ();
+		}
 	}
 }
