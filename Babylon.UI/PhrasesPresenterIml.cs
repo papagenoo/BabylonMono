@@ -26,6 +26,12 @@ namespace Babylon.UI
 			this.db = db;
 			this.lessonNumber = lessonNumber;
 
+			player.PlayingFinished += (s, e) =>
+			{
+				HandlePlaySoundStopEvent ();
+				//HandleNextEvent ();
+			};
+
 			stateMachine = new StateMachine (this, initialState);
 
 			var phrases = db.GetPhrasesByLesson (lessonNumber);
@@ -55,10 +61,8 @@ namespace Babylon.UI
 		{
 			Logger.Write ("PlaySoundStart");
 			player.Play (phrase.AudioFileName);
-			player.PlayingFinished += (sender, e) => {
-				HandlePlaySoundStopEvent ();
-			};
 		}
+
 
 		public void PlaySoundStop ()
 		{
@@ -74,7 +78,7 @@ namespace Babylon.UI
 
 		public void DelayAndRaseNextEvent ()
 		{
-			throw new NotImplementedException ();
+			//throw new NotImplementedException ();
 		}
 
 

@@ -46,6 +46,13 @@ namespace Babylon.iOS
 			this.Title = "Custom Title";
 			presenter = new PhrasesPresenterIml (this, soundPlayer, db, lessonNumber);
 
+			ManualButton.TouchUpInside += (sender, e) => {
+				presenter.HandleEnterManualModeEvent ();
+			};
+
+			AutoButton.TouchUpInside += (sender, e) => {
+				presenter.HandleEnterAutoModeEvent ();
+			};
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
@@ -73,19 +80,19 @@ namespace Babylon.iOS
 
 		partial void PlaySoundButtonClicked (NSObject sender)
 		{
-			presenter.PlaySoundStart ();
+			presenter.HandlePlaySoundStartEvent ();
 //			var filename = Path.Combine("Audio", "2.mp3");
 //			player.Play(filename);
 		}
 
 		partial void NextButtonClicked (NSObject sender)
 		{
-			presenter.MoveNext ();
+			presenter.HandleNextEvent ();
 		}
 
 		partial void PrevButtonClicked (NSObject sender)
 		{
-			presenter.MovePrevious ();
+			presenter.HandlePreviousEvent ();
 		}
 
 		#endregion
