@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Xamarin Studio to store outlets and
 // actions made in the UI designer. If it is removed, they will be lost.
@@ -12,6 +12,12 @@ namespace Babylon.iOS
 	[Register ("Babylon_iOSViewController")]
 	partial class Babylon_iOSViewController
 	{
+		[Outlet]
+		MonoTouch.UIKit.UIButton AutoButton { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton ManualButton { get; set; }
+
 		[Outlet]
 		MonoTouch.UIKit.UILabel TextLabel { get; set; }
 
@@ -40,6 +46,16 @@ namespace Babylon.iOS
 			if (TranslationLabel != null) {
 				TranslationLabel.Dispose ();
 				TranslationLabel = null;
+			}
+
+			if (ManualButton != null) {
+				ManualButton.Dispose ();
+				ManualButton = null;
+			}
+
+			if (AutoButton != null) {
+				AutoButton.Dispose ();
+				AutoButton = null;
 			}
 		}
 	}
