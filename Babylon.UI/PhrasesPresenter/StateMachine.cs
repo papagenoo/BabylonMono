@@ -30,9 +30,9 @@ namespace Babylon.UI
 		/// <param name="state">State.</param>
 		public void ChangeState (State state)
 		{
-			State.ExitState ();
+			State.ExitState (this);
 			State = state;
-			State.EnterState ();
+			State.EnterState (this);
 		}
 
 		#region Events
@@ -65,6 +65,11 @@ namespace Babylon.UI
 		public void RaseEnterManualModeEvent ()
 		{
 			State.HandleEnterManualModeEvent (this);
+		}
+
+		public void RaseTimeoutEvent ()
+		{
+			State.HandleTimeoutEvent (this);
 		}
 
 		#endregion

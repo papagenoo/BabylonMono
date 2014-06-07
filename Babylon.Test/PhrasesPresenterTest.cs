@@ -173,17 +173,6 @@ namespace Babylon.Test
 		}
 	}
 
-	public class DelayedAction
-	{
-		Timer timer;
 
-		public DelayedAction (Action action, int timeout)
-		{
-			timer = new Timer ((o) => {
-				action.Invoke ();
-				timer.Dispose();
-			}, null, 500, 10000); 
-		}
-	}
 }
 

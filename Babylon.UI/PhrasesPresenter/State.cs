@@ -4,12 +4,12 @@ namespace Babylon.UI
 {
 	public abstract class State
 	{
-		public virtual void EnterState ()
+		public virtual void EnterState (StateMachine context)
 		{
 			// Empty default implementation
 		}
 
-		public virtual void ExitState ()
+		public virtual void ExitState (StateMachine context)
 		{
 			// Empty default implementation
 		}
@@ -20,5 +20,6 @@ namespace Babylon.UI
 		public abstract void HandlePlaySoundStopEvent (StateMachine context);
 		public abstract void HandleEnterAutoModeEvent (StateMachine context);
 		public abstract void HandleEnterManualModeEvent (StateMachine context);
+		public abstract void HandleTimeoutEvent (StateMachine stateMachine);
 	}
 }

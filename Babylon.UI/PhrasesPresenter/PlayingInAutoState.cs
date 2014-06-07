@@ -17,12 +17,14 @@ namespace Babylon.UI
 		{
 			context.MovePrevious ();
 			context.PlaySoundStart ();		
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void HandleNextEvent (StateMachine context)
 		{
 			context.MoveNext ();
-			context.PlaySoundStart ();		
+			context.PlaySoundStart ();	
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void HandlePlaySoundStartEvent (StateMachine context)
@@ -41,8 +43,11 @@ namespace Babylon.UI
 
 		public override void HandleEnterManualModeEvent (StateMachine context)
 		{
-			context.EnterManualMode ();
 			context.ChangeState (PlayingInManualState.Instance);
+		}
+
+		public override void HandleTimeoutEvent (StateMachine stateMachine)
+		{
 		}
 
 		#endregion

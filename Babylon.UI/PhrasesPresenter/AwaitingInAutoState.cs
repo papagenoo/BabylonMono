@@ -17,7 +17,7 @@ namespace Babylon.UI
 		{
 			context.MovePrevious ();
 			context.PlaySoundStart ();
-			context.ChangeState (PlayingInAutoState.Instance);
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void HandleNextEvent (StateMachine context)
@@ -25,7 +25,7 @@ namespace Babylon.UI
 			context.MoveNext ();
 			context.PlaySoundStart ();
 			//context.ResetTimer ();
-			context.ChangeState (PlayingInAutoState.Instance);
+			context.ChangeState (PlayingInManualState.Instance);
 		}
 
 		public override void HandlePlaySoundStartEvent (StateMachine context)
@@ -36,13 +36,18 @@ namespace Babylon.UI
 
 		public override void HandlePlaySoundStopEvent (StateMachine context)
 		{
-			throw new InvalidStateTransitionException ();
+			//throw new InvalidStateTransitionException ();
 		}
 
 		public override void HandleEnterManualModeEvent (StateMachine context)
 		{
-			context.EnterManualMode ();		
 			context.ChangeState (AwaitingInManualState.Instance);
+		}
+
+		public override void HandleTimeoutEvent (StateMachine context)
+		{
+			context.MoveNext ();
+			context.PlaySoundStart ();
 		}
 
 		#endregion

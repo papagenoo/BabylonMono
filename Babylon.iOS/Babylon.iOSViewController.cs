@@ -111,6 +111,46 @@ namespace Babylon.iOS
 			}
 		}
 
+
+		public void DisableManualModeButton ()
+		{
+			ManualButton.Enabled = false;
+		}
+
+		public void EnableManualModeButton ()
+		{
+			ManualButton.Enabled = true;
+		}
+
+		public void DisableAutoModeButton ()
+		{
+			AutoButton.Enabled = false;
+		}
+
+		public void EnableAutoModeButton ()
+		{
+			AutoButton.Enabled = true;
+		}
+
+		public void EnableNextButton ()
+		{
+			NextButton.Enabled = true;
+		}
+
+		public void DisableNextButton ()
+		{
+			NextButton.Enabled = false;
+		}
+
+		public void EnablePreviousButton ()
+		{
+			PrevButton.Enabled = true;
+		}
+
+		public void DisablePreviousButton ()
+		{
+			PrevButton.Enabled = false;
+		}
 		#endregion
 	}
 }

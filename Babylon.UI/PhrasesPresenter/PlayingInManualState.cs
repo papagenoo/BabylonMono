@@ -37,7 +37,6 @@ namespace Babylon.UI
 
 		public override void HandleEnterAutoModeEvent (StateMachine context)
 		{
-			context.EnterAutoMode ();
 			context.ChangeState (PlayingInAutoState.Instance);
 		}
 

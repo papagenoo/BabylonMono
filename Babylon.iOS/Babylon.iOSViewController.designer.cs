@@ -19,6 +19,15 @@ namespace Babylon.iOS
 		MonoTouch.UIKit.UIButton ManualButton { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UIButton NextButton { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton PlayButton { get; set; }
+
+		[Outlet]
+		MonoTouch.UIKit.UIButton PrevButton { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UILabel TextLabel { get; set; }
 
 		[Outlet]
@@ -38,6 +47,16 @@ namespace Babylon.iOS
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (AutoButton != null) {
+				AutoButton.Dispose ();
+				AutoButton = null;
+			}
+
+			if (ManualButton != null) {
+				ManualButton.Dispose ();
+				ManualButton = null;
+			}
+
 			if (TextLabel != null) {
 				TextLabel.Dispose ();
 				TextLabel = null;
@@ -48,14 +67,19 @@ namespace Babylon.iOS
 				TranslationLabel = null;
 			}
 
-			if (ManualButton != null) {
-				ManualButton.Dispose ();
-				ManualButton = null;
+			if (PrevButton != null) {
+				PrevButton.Dispose ();
+				PrevButton = null;
 			}
 
-			if (AutoButton != null) {
-				AutoButton.Dispose ();
-				AutoButton = null;
+			if (NextButton != null) {
+				NextButton.Dispose ();
+				NextButton = null;
+			}
+
+			if (PlayButton != null) {
+				PlayButton.Dispose ();
+				PlayButton = null;
 			}
 		}
 	}

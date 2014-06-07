@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B661B7B00000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7281900000000000000000 /* UIKit.framework */; };
+		2CFBBEAE0000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308CCB4C0000000000000000 /* MapKit.framework */; };
+		22F274600000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C033E400000000000000000 /* Foundation.framework */; };
+		359A098F0000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392B162D0000000000000000 /* CoreGraphics.framework */; };
+		3F881ABE0000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 319275C00000000000000000 /* Default-568h@2x.png */; };
+		14BB83560000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184C8FF40000000000000000 /* Info.plist */; };
+		2E6444000000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67750DE00000000000000000 /* Entitlements.plist */; };
+		3111052A0000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A211C80000000000000000 /* MainStoryboard_iPhone.storyboard */; };
+		280CF4110000000000000000 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9E00AF0000000000000000 /* MainStoryboard_iPad.storyboard */; };
+		1ED5FFDC0000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 22670C7A0000000000000000 /* AppDelegate.h */; };
+		13EFF6E60000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 178103840000000000000000 /* AppDelegate.m */; };
+		AEBE5CD00000000000000000 /* Babylon_iOSViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = E7CF26B00000000000000000 /* Babylon_iOSViewController.h */; };
+		3E56C8160000000000000000 /* Babylon_iOSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7D4B400000000000000000 /* Babylon_iOSViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B9A74440000000000000000 /* Babylon.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Babylon.iOS.app"; path = "Babylon.iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7281900000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		308CCB4C0000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		5C033E400000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		392B162D0000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		319275C00000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		184C8FF40000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		67750DE00000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		34A211C80000000000000000 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPhone.storyboard"; path = "MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
+		2B9E00AF0000000000000000 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPad.storyboard"; path = "MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
+		22670C7A0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		178103840000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		E7CF26B00000000000000000 /* Babylon_iOSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Babylon_iOSViewController.h"; path = "Babylon_iOSViewController.h"; sourceTree = "<group>"; };
+		1E7D4B400000000000000000 /* Babylon_iOSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Babylon_iOSViewController.m"; path = "Babylon_iOSViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268D36010000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B661B7B00000000000000000 /* UIKit.framework in Frameworks */,
+				2CFBBEAE0000000000000000 /* MapKit.framework in Frameworks */,
+				22F274600000000000000000 /* Foundation.framework in Frameworks */,
+				359A098F0000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A6A78F00000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				31405BDB0000000000000000 /* Babylon.iOS */,
+				14EADA070000000000000000 /* Frameworks */,
+				3BF381B50000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF381B50000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B9A74440000000000000000 /* Babylon.iOS.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		14EADA070000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7281900000000000000000 /* UIKit.framework */,
+				308CCB4C0000000000000000 /* MapKit.framework */,
+				5C033E400000000000000000 /* Foundation.framework */,
+				392B162D0000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		31405BDB0000000000000000 /* Babylon.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				22670C7A0000000000000000 /* AppDelegate.h */,
+				E7CF26B00000000000000000 /* Babylon_iOSViewController.h */,
+				319275C00000000000000000 /* Default-568h@2x.png */,
+				67750DE00000000000000000 /* Entitlements.plist */,
+				184C8FF40000000000000000 /* Info.plist */,
+				2B9E00AF0000000000000000 /* MainStoryboard_iPad.storyboard */,
+				34A211C80000000000000000 /* MainStoryboard_iPhone.storyboard */,
+				15D1EEC30000000000000000 /* Supporting Files */,
+			);
+			name = "Babylon.iOS";
+			sourceTree = "<group>";
+		};
+		15D1EEC30000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				178103840000000000000000 /* AppDelegate.m */,
+				1E7D4B400000000000000000 /* Babylon_iOSViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		204EA5160000000000000000 /* Babylon.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E74E6A0000000000000000 /* Build configuration list for PBXNativeTarget "Babylon.iOS" */;
+			buildPhases = (
+				1126EA4D0000000000000000 /* Sources */,
+				268D36010000000000000000 /* Frameworks */,
+				3A1189D80000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Babylon.iOS";
+			productName = "Babylon.iOS";
+			productReference = 2B9A74440000000000000000 /* Babylon.iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		159B7F3C0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 12A31BF20000000000000000 /* Build configuration list for PBXProject "Babylon.iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6A6A78F00000000000000000;
+			productRefGroup = 3BF381B50000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				204EA5160000000000000000 /* Babylon.iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A1189D80000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F881ABE0000000000000000 /* Default-568h@2x.png in Resources */,
+				14BB83560000000000000000 /* Info.plist in Resources */,
+				2E6444000000000000000000 /* Entitlements.plist in Resources */,
+				3111052A0000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */,
+				280CF4110000000000000000 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1126EA4D0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ED5FFDC0000000000000000 /* AppDelegate.h in Sources */,
+				13EFF6E60000000000000000 /* AppDelegate.m in Sources */,
+				AEBE5CD00000000000000000 /* Babylon_iOSViewController.h in Sources */,
+				3E56C8160000000000000000 /* Babylon_iOSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		141F4D970000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		7EFF61800000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "Babylon.iOS";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A31BF20000000000000000 /* Build configuration list for PBXProject "Babylon.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141F4D970000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		20E74E6A0000000000000000 /* Build configuration list for PBXNativeTarget "Babylon.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFF61800000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 159B7F3C0000000000000000 /* Project object */;
+}

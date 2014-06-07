@@ -35,13 +35,14 @@ namespace Babylon.UI
 
 		public override void HandlePlaySoundStopEvent (StateMachine context)
 		{
-			throw new InvalidStateTransitionException ();
+			//throw new InvalidStateTransitionException ();
 		}
 
 		public override void HandleEnterAutoModeEvent (StateMachine context)
 		{
-			context.EnterAutoMode ();
-			context.ChangeState(AwaitingInAutoState.Instance);
+			context.MoveNext ();
+			context.PlaySoundStart ();
+			context.ChangeState (AwaitingInAutoState.Instance);
 		}
 
 		#endregion		

@@ -29,7 +29,10 @@ namespace Babylon.UI
 			player.PlayingFinished += (s, e) =>
 			{
 				HandlePlaySoundStopEvent ();
-				//HandleNextEvent ();
+//				new DelayedAction (() => {
+//					//	HandleNextEvent ();
+//				}, 5000);
+				HandleTimeoutEvent ();
 			};
 
 			stateMachine = new StateMachine (this, initialState);
@@ -70,10 +73,15 @@ namespace Babylon.UI
 
 		public void EnterAutoMode ()
 		{
+			view.EnableManualModeButton ();
+			view.DisableAutoModeButton ();
+
 		}
 
 		public void EnterManualMode ()
 		{
+			view.DisableManualModeButton ();
+			view.EnableAutoModeButton ();
 		}
 
 		public void DelayAndRaseNextEvent ()
@@ -114,6 +122,11 @@ namespace Babylon.UI
 		public void HandleEnterManualModeEvent ()
 		{
 			stateMachine.RaseEnterManualModeEvent ();
+		}
+
+		public void HandleTimeoutEvent ()
+		{
+			stateMachine.RaseTimeoutEvent ();
 		}
 
 		#endregion

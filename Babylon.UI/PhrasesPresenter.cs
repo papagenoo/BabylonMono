@@ -19,5 +19,6 @@ namespace Babylon.UI
 		void HandlePlaySoundStopEvent ();
 		void HandleEnterAutoModeEvent ();
 		void HandleEnterManualModeEvent ();
+		void HandleTimeoutEvent ();
 	}
 }
