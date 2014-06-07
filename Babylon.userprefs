@@ -1,85 +1,42 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.UI\PhrasesPresenter\PlayingInAutoState.cs">
-    <Files>
-      <File FileName="Babylon.UI\PhrasesPresenter\StateMachine.cs" Line="42" Column="35" />
-      <File FileName="Babylon.Android\MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS\Babylon.iOSViewController.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Test\StateMachineTest.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI\PhrasesPresenter\PlayingInAutoState.cs" Line="41" Column="3" />
-      <File FileName="Babylon.UI\PhrasesPresenter\AwaitingInManualState.cs" Line="16" Column="65" />
-      <File FileName="Babylon.UI\PhrasesPresenter\PlayingInManualState.cs" Line="39" Column="4" />
-      <File FileName="Babylon.UI\PhrasesPresenter.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Test\PhrasesPresenterTest.cs" Line="171" Column="29" />
-      <File FileName="Babylon.UI\PhrasesPresenterIml.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI\PhrasesView.cs" Line="1" Column="1" />
-      <File FileName="Babylon\SoundPlayerBase.cs" Line="5" Column="2" />
-      <File FileName="Babylon.UI\PhrasesPresenter\AutoState.cs" Line="7" Column="70" />
-      <File FileName="Babylon.UI\PhrasesPresenter\AwaitingInAutoState.cs" Line="16" Column="65" />
-      <File FileName="Babylon.UI\PhrasesPresenter\State.cs" Line="17" Column="65" />
-      <File FileName="Babylon.UI\PhrasesPresenter\ManualState.cs" Line="7" Column="72" />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.UI/PhrasesPresenterIml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.UI/PhrasesPresenter/StateMachine.cs">
     <Files>
-      <File FileName="Babylon.UI/PhrasesPresenter/StateMachine.cs" Line="1" Column="1" />
-      <File FileName="Babylon.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="54" Column="20" />
-      <File FileName="Babylon.Test/StateMachineTest.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInAutoState.cs" Line="29" Column="4" />
-      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInAutoState.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInManualState.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInManualState.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AutoState.cs" Line="1" Column="1" />
-      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="39" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="1" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenterIml.cs" Line="32" Column="7" />
->>>>>>> 5ddb9f2e884ec333d5c553b734fd6d5864d5a86a
+      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="8" Column="36" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="152" Column="30" />
+      <File FileName="Babylon.UI/PhrasesPresenterIml.cs" Line="88" Column="4" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AutoState.cs" Line="14" Column="35" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInAutoState.cs" Line="44" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/State.cs" Line="12" Column="54" />
+      <File FileName="Babylon.UI/PhrasesPresenter/StateMachine.cs" Line="35" Column="26" />
+      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="22" Column="26" />
+      <File FileName="Babylon.Test/PhrasesPresenterTest.cs" Line="176" Column="1" />
+      <File FileName="Babylon/DelayedAction.cs" Line="6" Column="28" />
+      <File FileName="Babylon/SoundPlayerBase.cs" Line="5" Column="2" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInManualState.cs" Line="43" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/ManualState.cs" Line="14" Column="12" />
+      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInAutoState.cs" Line="46" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInManualState.cs" Line="40" Column="1" />
+      <File FileName="Babylon.UI/PhrasesView.cs" Line="17" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Babylon" expanded="True" />
-          <Node name="Babylon.Test" expanded="True">
-            <Node name="deprecated" expanded="True" />
-          </Node>
+          <Node name="Babylon.iOS" expanded="True" />
+          <Node name="Babylon.Test" expanded="True" />
           <Node name="Babylon.UI" expanded="True">
-<<<<<<< HEAD
             <Node name="PhrasesPresenter" expanded="True">
-              <Node name="PlayingInAutoState.cs" selected="True" />
+              <Node name="StateMachine.cs" selected="True" />
             </Node>
-=======
-            <Node name="PhrasesPresenter" expanded="True" />
-            <Node name="PhrasesPresenterIml.cs" selected="True" />
->>>>>>> 5ddb9f2e884ec333d5c553b734fd6d5864d5a86a
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
-<<<<<<< HEAD
-        <State expanded="True">
-          <Node name="Babylon.Test" expanded="True">
-            <Node name="Babylon" expanded="True">
-              <Node name="Test" expanded="True">
-                <Node name="InMemoryPhrasesDatabaseTest" expanded="True" />
-                <Node name="LoopedTwoWayEnumeratorTest" expanded="True" />
-                <Node name="PhrasesPresenterTest" expanded="True">
-                  <Node name="PlayStop_In_PlayingInAutoState_Test" selected="True" />
-                </Node>
-                <Node name="PhraseTest" expanded="True" />
-                <Node name="StateMachine_AwaitingInManual_Test" expanded="True" />
-                <Node name="TwoWayEnumeratorTest" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-=======
         <State expanded="True" selected="True" />
->>>>>>> 5ddb9f2e884ec333d5c553b734fd6d5864d5a86a
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -87,5 +44,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Babylon.Android MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" AndroidDeviceId-Debug="7C098DC5694B3DB6B021E230CA5D8A6" />
 </Properties>
