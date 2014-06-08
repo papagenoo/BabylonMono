@@ -43,7 +43,7 @@ namespace Babylon.iOS
 			new PopulateInMemoryDatabaseWithSampleDataCmd (db as InMemoryDatabase)
 				.Execute ();
 
-			this.Title = "Custom Title";
+			this.LectionTitle = "Custom Title";
 			presenter = new PhrasesPresenterIml (this, soundPlayer, db, lessonNumber);
 
 			ManualButton.TouchUpInside += (sender, e) => {
@@ -53,6 +53,8 @@ namespace Babylon.iOS
 			AutoButton.TouchUpInside += (sender, e) => {
 				presenter.HandleEnterAutoModeEvent ();
 			};
+
+			TitleLabel.Text = "Erste (1.) Lektion";
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 
@@ -108,6 +110,12 @@ namespace Babylon.iOS
 		public string Translation {
 			set {
 				TranslationLabel.Text = value;
+			}
+		}
+
+		public string LectionTitle {
+			set {
+				TitleLabel.Text = value;
 			}
 		}
 

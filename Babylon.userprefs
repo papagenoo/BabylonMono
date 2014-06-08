@@ -1,34 +1,35 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon.UI/PhrasesPresenter/StateMachine.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Babylon/PopulateInMemoryDatabaseTransactionWithSampleData.cs">
     <Files>
-      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="8" Column="36" />
-      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="152" Column="30" />
-      <File FileName="Babylon.UI/PhrasesPresenterIml.cs" Line="88" Column="4" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AutoState.cs" Line="14" Column="35" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInAutoState.cs" Line="44" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/State.cs" Line="12" Column="54" />
-      <File FileName="Babylon.UI/PhrasesPresenter/StateMachine.cs" Line="35" Column="26" />
-      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="22" Column="26" />
-      <File FileName="Babylon.Test/PhrasesPresenterTest.cs" Line="176" Column="1" />
-      <File FileName="Babylon/DelayedAction.cs" Line="6" Column="28" />
-      <File FileName="Babylon/SoundPlayerBase.cs" Line="5" Column="2" />
-      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInManualState.cs" Line="43" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/ManualState.cs" Line="14" Column="12" />
-      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInAutoState.cs" Line="46" Column="1" />
-      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInManualState.cs" Line="40" Column="1" />
-      <File FileName="Babylon.UI/PhrasesView.cs" Line="17" Column="23" />
+      <File FileName="Babylon.iOS/SoundPlayerIml.cs" Line="1" Column="1" />
+      <File FileName="Babylon.iOS/Babylon.iOSViewController.cs" Line="47" Column="30" />
+      <File FileName="Babylon.UI/PhrasesPresenterIml.cs" Line="39" Column="4" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AutoState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInAutoState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/State.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/StateMachine.cs" Line="25" Column="15" />
+      <File FileName="Babylon.UI/PhrasesPresenter.cs" Line="1" Column="1" />
+      <File FileName="Babylon.Test/PhrasesPresenterTest.cs" Line="1" Column="1" />
+      <File FileName="Babylon/DelayedAction.cs" Line="1" Column="1" />
+      <File FileName="Babylon/SoundPlayerBase.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/AwaitingInManualState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/ManualState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInAutoState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesPresenter/PlayingInManualState.cs" Line="1" Column="1" />
+      <File FileName="Babylon.UI/PhrasesView.cs" Line="7" Column="22" />
+      <File FileName="Babylon/PopulateInMemoryDatabaseTransactionWithSampleData.cs" Line="32" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Babylon" expanded="True" />
+          <Node name="Babylon" expanded="True">
+            <Node name="PopulateInMemoryDatabaseTransactionWithSampleData.cs" selected="True" />
+          </Node>
           <Node name="Babylon.iOS" expanded="True" />
           <Node name="Babylon.Test" expanded="True" />
           <Node name="Babylon.UI" expanded="True">
-            <Node name="PhrasesPresenter" expanded="True">
-              <Node name="StateMachine.cs" selected="True" />
-            </Node>
+            <Node name="PhrasesPresenter" expanded="True" />
           </Node>
         </State>
       </Pad>

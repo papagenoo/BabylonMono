@@ -31,6 +31,9 @@ namespace Babylon.iOS
 		MonoTouch.UIKit.UILabel TextLabel { get; set; }
 
 		[Outlet]
+		MonoTouch.UIKit.UILabel TitleLabel { get; set; }
+
+		[Outlet]
 		MonoTouch.UIKit.UILabel TranslationLabel { get; set; }
 
 		[Action ("NextButtonClicked:")]
@@ -57,21 +60,6 @@ namespace Babylon.iOS
 				ManualButton = null;
 			}
 
-			if (TextLabel != null) {
-				TextLabel.Dispose ();
-				TextLabel = null;
-			}
-
-			if (TranslationLabel != null) {
-				TranslationLabel.Dispose ();
-				TranslationLabel = null;
-			}
-
-			if (PrevButton != null) {
-				PrevButton.Dispose ();
-				PrevButton = null;
-			}
-
 			if (NextButton != null) {
 				NextButton.Dispose ();
 				NextButton = null;
@@ -80,6 +68,26 @@ namespace Babylon.iOS
 			if (PlayButton != null) {
 				PlayButton.Dispose ();
 				PlayButton = null;
+			}
+
+			if (PrevButton != null) {
+				PrevButton.Dispose ();
+				PrevButton = null;
+			}
+
+			if (TitleLabel != null) {
+				TitleLabel.Dispose ();
+				TitleLabel = null;
+			}
+
+			if (TextLabel != null) {
+				TextLabel.Dispose ();
+				TextLabel = null;
+			}
+
+			if (TranslationLabel != null) {
+				TranslationLabel.Dispose ();
+				TranslationLabel = null;
 			}
 		}
 	}
